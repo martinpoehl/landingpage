@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 // Import react scroll
 import { Link as LinkScroll } from "react-scroll";
 import ButtonOutline from "../misc/ButtonOutline.";
-import LogoVPN from "../../public/assets/Logo.svg";
 
 const Header = () => {
   const [activeLink, setActiveLink] = useState(null);
@@ -21,11 +21,20 @@ const Header = () => {
           (scrollActive ? " shadow-md pt-0" : " pt-4")
         }
       >
-        <nav className="max-w-screen-xl px-6 sm:px-8 lg:px-16 mx-auto grid grid-flow-col py-3 sm:py-4">
+        <nav className="max-w-screen-xl px-6 sm:px-8 lg:px-16 mx-auto grid grid-flow-col py-1 sm:py-4">
           <div className="col-start-1 col-end-2 flex items-center">
-            <LogoVPN className="h-8 w-auto" />
+            <Image
+              className="w-auto"
+              src={"/assets/Logo.png"}
+              height={100}
+              width={100}
+            />
+            <div>
+              <h1 className="font-mono font-bold text-sm md:text-xl">Martin</h1>
+              <h1 className="font-mono font-bold text-sm md:text-xl">Pöhl</h1>
+            </div>
           </div>
-          <ul className="hidden lg:flex col-start-4 col-end-8 text-black-500  items-center">
+          <ul className="hidden md:flex col-start-4 col-end-8 text-black-500  items-center">
             <LinkScroll
               activeClass="active"
               to="about"
@@ -42,7 +51,7 @@ const Header = () => {
                   : " text-black-500 hover:text-orange-500 a")
               }
             >
-              About
+              Über mich
             </LinkScroll>
             <LinkScroll
               activeClass="active"
@@ -60,7 +69,7 @@ const Header = () => {
                   : " text-black-500 hover:text-orange-500 ")
               }
             >
-              Feature
+              Projekte
             </LinkScroll>
             <LinkScroll
               activeClass="active"
@@ -78,7 +87,7 @@ const Header = () => {
                   : " text-black-500 hover:text-orange-500 ")
               }
             >
-              Pricing
+              Kosten
             </LinkScroll>
             <LinkScroll
               activeClass="active"
@@ -96,16 +105,16 @@ const Header = () => {
                   : " text-black-500 hover:text-orange-500 ")
               }
             >
-              Testimonial
+              Bewertungen
             </LinkScroll>
           </ul>
           <div className="col-start-10 col-end-12 font-medium flex justify-end items-center">
             <Link href="/">
               <a className="text-black-600 mx-2 sm:mx-4 capitalize tracking-wide hover:text-orange-500 transition-all">
-                  Sign In
+                #
               </a>
             </Link>
-            <ButtonOutline>Sign Up</ButtonOutline>
+            <ButtonOutline>Kontakt</ButtonOutline>
           </div>
         </nav>
       </header>
