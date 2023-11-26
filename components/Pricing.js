@@ -51,7 +51,7 @@ const Pricing = () => {
               variants={scrollAnimation}
               className="leading-normal w-10/12 sm:w-7/12 lg:w-6/12 mx-auto my-2 text-center"
             >
-              Wählen Sie eines der Pakete.
+              Wählen Sie eines der Pakete aus.
             </motion.p>
           </ScrollAnimationWrapper>
           <div className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-3 gap-4 lg:gap-12 py-8 lg:py-12 px-6 sm:px-0 lg:px-6">
@@ -63,7 +63,7 @@ const Pricing = () => {
                   whileHover={{
                     scale: 1.1,
                     transition: {
-                      duration: 0.2,
+                      duration: 0.8,
                     },
                   }}
                 >
