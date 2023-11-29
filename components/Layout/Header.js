@@ -41,7 +41,7 @@ const Header = () => {
             </a>
 
             <div className="ml-4 mb-1">
-              <a href="/" className="font-bold font-mono text-sm md:text-xl">
+              <a href="/" className="drop-shadow-lg font-bold font-mono text-sm md:text-xl">
                 Martin <br />
                 Pöhl
               </a>
