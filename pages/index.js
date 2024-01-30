@@ -9,7 +9,7 @@ import Projects from "../components/Projects";
 export default function Home() {
   return (
     <>
-      <SeoHead title="Martin Pöhl - Ich baue Ihre Webseite für Sie" />
+      <SeoHead title="Martin Pöhl - Ich erstelle Ihre Webseite für Sie" />
       <Layout>
         <Hero />
         <Products />

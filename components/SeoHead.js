@@ -3,10 +3,10 @@ import { useRouter } from "next/router";
 
 // Default value for some meta data
 const defaultMeta = {
-  title: "LaslesVPN",
-  siteName: "LaslesVPN",
+  title: "Martin Pöhl",
+  siteName: "Martin Pöhl",
   description:
-    "Landing page VPN LaslesVPN Best VPN For Privacy, Country and Cheapest",
+    "Lassen Sie sich von mir eine professionelle Webseite erstellen",
   // change base url of your web (without '/' at the end)
   url: "https://next-landing-vpn.vercel.app",
   type: "website",
@@ -50,6 +50,7 @@ const SeoHead = (props) => {
   return (
     <Head>
       <title>{meta.title}</title>
+      
       <meta name="robots" content={meta.robots} />
       <meta content={meta.description} name="description" />
       <meta property="og:url" content={`${meta.url}${router.asPath}`} />
