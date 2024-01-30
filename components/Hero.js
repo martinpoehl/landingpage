@@ -10,17 +10,17 @@ const Hero = ({
   listUser = [
     {
       name: "Kunden",
-      number: "1",
+      number: "2",
       icon: "/assets/Icon/heroicons_sm-user.svg",
     },
     {
       name: "Standorte",
-      number: "3",
+      number: "1",
       icon: "/assets/Icon/gridicons_location.svg",
     },
     {
       name: "Hosting",
-      number: "1",
+      number: "2",
       icon: "/assets/Icon/bx_bxs-server.svg",
     },
   ],
@@ -36,13 +36,12 @@ const Hero = ({
         >
           <div className=" flex flex-col justify-center items-start row-start-2 sm:row-start-1">
             <h1 className="text-3xl lg:text-4xl xl:text-5xl font-medium text-black-600 leading-normal">
-              Lassen Sie sich von uns eine moderne <strong>Webseite</strong> für
-              Ihr Unternehmen erstellen & hosten.
+            Möchten Sie eine moderne Website für Ihr Unternehmen erstellen lassen?
             </h1>
             <p className="text-black-500 mt-4 mb-6">
-              Möchten Sie eine professionelle Webseite für Ihr Unternehmen?
+            Dann setzen Sie sich doch mit mir in Verbindung.
             </p>
-            <ButtonPrimary>Buchen</ButtonPrimary>
+            <ButtonPrimary>Anfragen</ButtonPrimary>
           </div>
           <div className="flex w-full">
             <motion.div className="h-full w-full" variants={scrollAnimation}>
