@@ -15,6 +15,14 @@ const TestimoniData = ({
       rating: "5",
       testimoni: "Super Service ... :)",
     },
+    {
+      name: "Michael Oeri",
+      image: "/assets/people-3.png",
+      city: "St.Moritz",
+      country: " Schweiz",
+      rating: "5",
+      testimoni: "Der Service ist schnell, professionell und unkompliziert.",
+    },
   ],
 }) => {
   const settings = {

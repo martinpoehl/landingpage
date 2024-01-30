@@ -45,13 +45,13 @@ const Pricing = () => {
               variants={scrollAnimation}
               className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-relaxed"
             >
-              Was brauchen Sie?
+              Welche Anforderungen haben Sie?
             </motion.h3>
             <motion.p
               variants={scrollAnimation}
               className="leading-normal w-10/12 sm:w-7/12 lg:w-6/12 mx-auto my-2 text-center"
             >
-              Wählen Sie eines der Pakete aus.
+              Entscheiden Sie sich für ein Paket Ihrer Wahl.
             </motion.p>
           </ScrollAnimationWrapper>
           <div className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-3 gap-4 lg:gap-12 py-8 lg:py-12 px-6 sm:px-0 lg:px-6">

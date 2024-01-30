@@ -39,10 +39,10 @@ const Products = () => {
             variants={scrollAnimation}
           >
             <h3 className="text-3xl lg:text-4xl font-medium leading-relaxed text-black-600">
-              Auf Ihre Wünsche abgestimmt.
+            Individuell nach Ihren Vorstellungen gestaltet.
             </h3>
             <p className="my-2 text-black-500">
-              Sie können uns all Ihre Wünsche ganz einfach mitteilen.
+            Sie haben die Möglichkeit, mir Ihre Wünsche unkompliziert mitzuteilen.
             </p>
             <ul className="text-black-500 self-start list-inside ml-8">
               {features.map((feature, index) => (
