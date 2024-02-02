@@ -22,8 +22,8 @@ const Testimoni = () => {
             <motion.p
               variants={scrollAnimation}
               className="leading-normal w-10/12 sm:w-7/12 lg:w-6/12 mx-auto my-2 text-center"
-            ></motion.p>
-            <p>Hier sind einige zufriedene Kundenbeispiele.</p>
+            >Hier sind einige zufriedene Kundenbeispiele.</motion.p>
+            
           </ScrollAnimationWrapper>
         </div>
         <ScrollAnimationWrapper className="w-full flex flex-col py-12">
@@ -32,7 +32,7 @@ const Testimoni = () => {
           </motion.div>
         </ScrollAnimationWrapper>
         <ScrollAnimationWrapper className="relative w-full mb-16">
-          <motion.div variants={scrollAnimation} custom={{ duration: 3 }}>
+          <motion.div variants={scrollAnimation} custom={{ duration: 6 }}>
             <div className="absolute rounded-xl sm:py-14 px-6 sm:px-12 lg:px-16 w-full flex flex-col sm:flex-row pb-5 justify-between items-center z-10 bg-white-500">
               <div className="flex flex-col text-left w-10/12 sm:w-7/12 lg:w-5/12 mb-6 sm:mb-0">
                 <h5 className="pb-1 text-black-600 text-xl sm:text-2xl lg:text-3xl leading-relaxed font-medium">
