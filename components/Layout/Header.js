@@ -30,16 +30,16 @@ const Header = () => {
         }
       >
         <nav className="max-w-screen-xl px-6 sm:px-8 lg:px-16 mx-auto grid grid-flow-col py-1 sm:py-4">
-          <div href="/" className="col-start-1 col-end-2 flex items-center">
-            <a href="/">
+          <a href="/">
+          <div className="col-start-1 col-end-2 flex items-center">
+            
               <Image
                 className="w-auto"
                 src={"/assets/Logo_lg.png"}
                 height={65}
                 width={65}
               />
-            </a>
-
+            
             <div className="ml-4 mb-1">
               <a href="/" className="drop-shadow-lg font-bold font-mono text-sm md:text-xl">
                 Martin <br />
@@ -47,6 +47,7 @@ const Header = () => {
               </a>
             </div>
           </div>
+          </a>
           <ul className="hidden lg:flex col-start-4 col-end-8 text-black-500  items-center">
             {NavItems.map((item) => (
               <LinkScroll
@@ -76,7 +77,7 @@ const Header = () => {
                 Über mich
               </a>
             </Link>
-            <Link href=""><ButtonOutline>Kontakt</ButtonOutline></Link>
+            <a href="/contact"><ButtonOutline>Kontakt</ButtonOutline></a>
             
           </div>
         </nav>

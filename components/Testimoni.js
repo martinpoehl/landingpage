@@ -40,7 +40,10 @@ const Testimoni = () => {
                 </h5>
                 <p>Ich werde mich umgehend bei Ihnen melden.</p>
               </div>
-              <ButtonPrimary>Email</ButtonPrimary>
+              <a href="mailto:martinpoehl@me.com">
+                <ButtonPrimary>Email</ButtonPrimary>
+              </a>
+              
             </div>
             <div
               className="absolute bg-black-600 opacity-5 w-11/12 rounded-lg h-60 sm:h-56 top-0 mt-8 mx-auto left-0 right-0"

@@ -45,7 +45,7 @@ const Pricing = () => {
               variants={scrollAnimation}
               className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-relaxed"
             >
-              Welche Anforderungen haben Sie?
+              Welche <span style={{ color: '#f43855' }}>Anforderungen</span> haben Sie?
             </motion.h3>
             <motion.p
               variants={scrollAnimation}

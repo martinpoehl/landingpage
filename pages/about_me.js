@@ -1,16 +1,18 @@
 import React from 'react'
-import Layout from "../components/Layout/Layout";
 import SeoHead from "../components/SeoHead";
+import Footer from '../components/Layout/Footer';
+import Header from '../components/Layout/Header';
+import About from '../components/About';
 
-const AboutMe = () => {
+const AboutMePage = () => {
   return (
     <>
       <SeoHead title="Martin Pöhl - Über mich" />
-      <Layout>
-        <div>AboutMe</div>
-      </Layout>
+      <Header />
+      <About />
+      <Footer />
     </>
   )
 }
 
-export default AboutMe
+export default AboutMePage
