@@ -17,7 +17,7 @@ const Testimoni = () => {
               variants={scrollAnimation}
               className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-relaxed"
             >
-              Zufriedene Kunden
+              Zufriedene <span style={{ color: '#f43855' }}>Kunden</span>
             </motion.h3>
             <motion.p
               variants={scrollAnimation}
@@ -36,7 +36,7 @@ const Testimoni = () => {
             <div className="absolute rounded-xl sm:py-14 px-6 sm:px-12 lg:px-16 w-full flex flex-col sm:flex-row pb-5 justify-between items-center z-10 bg-white-500">
               <div className="flex flex-col text-left w-10/12 sm:w-7/12 lg:w-5/12 mb-6 sm:mb-0">
                 <h5 className="pb-1 text-black-600 text-xl sm:text-2xl lg:text-3xl leading-relaxed font-medium">
-                Falls Sie Fragen haben, können Sie diese gerne per E-Mail an mich senden.
+                Falls Sie <span style={{ color: '#f43855' }}>Fragen</span> haben, können Sie diese gerne per <span style={{ color: '#f43855' }}>E-Mail</span>  an mich senden.
                 </h5>
                 <p>Ich werde mich umgehend bei Ihnen melden.</p>
               </div>
