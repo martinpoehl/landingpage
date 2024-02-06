@@ -9,18 +9,18 @@ import Main from "/public/assets/Main.json";
 const Hero = ({
   listUser = [
     {
-      name: "Kunden",
-      number: "2",
+      name: "Webseite",
+      number: "",
       icon: "/assets/Icon/heroicons_sm-user.svg",
     },
     {
-      name: "Standorte",
-      number: "1",
+      name: "SEO",
+      number: "",
       icon: "/assets/Icon/gridicons_location.svg",
     },
     {
-      name: "Hosting",
-      number: "2",
+      name: "Wartung & Support",
+      number: "",
       icon: "/assets/Icon/bx_bxs-server.svg",
     },
   ],
@@ -67,15 +67,15 @@ const Hero = ({
               custom={{ duration: 2 + index }}
               variants={scrollAnimation}
             >
-              <div className="flex mx-auto w-40 sm:w-auto">
+              <div className="flex mx-auto w-60 sm:w-auto">
                 <div className="flex items-center justify-center bg-orange-100 w-12 h-12 mr-6 rounded-full">
                   <img src={listUsers.icon} className="h-6 w-6" />
                 </div>
                 <div className="flex flex-col">
-                  <p className="text-xl text-black-600 font-bold">
-                    {listUsers.number}
+                  <p className="text-xl text-black-100 font-bold max-w-40">
+                    {listUsers.name}
                   </p>
-                  <p className="text-lg text-black-500">{listUsers.name}</p>
+                  <p className="text-lg text-black-500">{listUsers.nuber}</p>
                 </div>
               </div>
             </motion.div>
