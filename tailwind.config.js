@@ -36,9 +36,13 @@ module.exports = {
         500: "#fff",
       },
       gray: {
-        100: "#EEEFF2",
+        100: "#E9E5EC",
         400: "#AFB5C0",
         500: "#DDDDDD",
+      },
+      blue: {
+        100: "#e2f5fb",
+        200: "#c4e9f7",
       },
     },
     extend: {},
