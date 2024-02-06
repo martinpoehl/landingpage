@@ -67,7 +67,7 @@ const Pricing = () => {
                     },
                   }}
                 >
-                  <div className="p-4 lg:p-0 mt-6 lg:mt-16">
+                  <div className="p-4 lg:p-0 lg:mt-8">
                     <Image
                       src={plan.src}
                       width={145}

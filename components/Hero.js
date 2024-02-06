@@ -59,7 +59,7 @@ const Hero = ({
         </motion.div>
       </ScrollAnimationWrapper>
       <div className="relative w-full flex">
-        <ScrollAnimationWrapper className="rounded-lg w-full grid grid-flow-row sm:grid-flow-row grid-cols-1 sm:grid-cols-3 py-9 divide-y-2 sm:divide-y-0 sm:divide-x-2 divide-gray-100 bg-white-500 z-10">
+        <ScrollAnimationWrapper className="rounded-lg w-full grid grid-flow-row sm:grid-flow-row grid-cols-1 sm:grid-cols-3 py-1 divide-y-2 sm:divide-y-0 sm:divide-x-2 divide-gray-100 bg-white-500 z-10">
           {listUser.map((listUsers, index) => (
             <motion.div
               className="flex items-center justify-start sm:justify-center py-4 sm:py-6 w-8/12 px-4 sm:w-auto mx-auto sm:mx-0"
@@ -67,15 +67,14 @@ const Hero = ({
               custom={{ duration: 2 + index }}
               variants={scrollAnimation}
             >
-              <div className="flex mx-auto w-60 sm:w-auto">
-                <div className="flex items-center justify-center bg-orange-100 w-12 h-12 mr-6 rounded-full">
+              <div className="flex items-center mx-auto w-60 sm:w-auto">
+                <div className="flex items-center justify-center bg-orange-100 w-12 h-12 mr-6 rounded-full py-3">
                   <img src={listUsers.icon} className="h-6 w-6" />
                 </div>
-                <div className="flex flex-col">
+                <div className="py-3">
                   <p className="text-xl text-black-100 font-bold max-w-40">
                     {listUsers.name}
                   </p>
-                  <p className="text-lg text-black-500">{listUsers.nuber}</p>
                 </div>
               </div>
             </motion.div>
