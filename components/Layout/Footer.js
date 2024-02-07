@@ -1,7 +1,6 @@
 import React from "react";
 import Logo from "/public/assets/Logo.png";
 import Github from "../../public/assets/Icon/gridicon_github.svg";
-import Twitter from "../../public/assets/Icon/twitter.svg";
 import Instagram from "../../public/assets/Icon/instagram.svg";
 import Image from "next/image";
 

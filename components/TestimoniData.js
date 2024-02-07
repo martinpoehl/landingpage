@@ -9,15 +9,15 @@ const TestimoniData = ({
   listTestimoni = [
     {
       name: "Karin Schweizer",
-      image: "/assets/people-3.png",
+      image: "/assets/icon/user.svg",
       city: "Birr",
       country: " Schweiz",
       rating: "5",
-      testimoni: "Super Service ... :)",
+      testimoni: "Super Service, die Webseite gefällt mir sehr :)",
     },
     {
       name: "Michael Oeri",
-      image: "/assets/people-3.png",
+      image: "/assets/icon/user.svg",
       city: "St.Moritz",
       country: " Schweiz",
       rating: "5",
@@ -87,14 +87,17 @@ const TestimoniData = ({
                     </p>
                   </div>
                 </div>
-                <div className="flex flex-none items-center ml-auto order-1 xl:order-2">
-                  <p className="text-sm">{listTestimonis.rating}</p>
-                  <span className="flex ml-4">
-                    <Stars className="h-4 w-4" />
-                  </span>
-                </div>
               </div>
+            
               <p className="mt-5 text-left">{listTestimonis.testimoni}</p>
+              
+              <span className="flex mt-4">
+                    <Stars className="h-4 w-4" />
+                    <Stars className="h-4 w-4" />
+                    <Stars className="h-4 w-4" />
+                    <Stars className="h-4 w-4" />
+                    <Stars className="h-4 w-4" />
+              </span>
             </div>
           </div>
         ))}
