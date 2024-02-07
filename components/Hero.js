@@ -28,7 +28,7 @@ const Hero = ({
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
 
   return (
-    <div className="max-w-screen-xl mt-24 px-8 xl:px-16 mx-auto" id="hero">
+    <div className="max-w-screen-xl mt-24 px-8 xl:px-16 mx-auto shadow-2xl" id="hero">
       <ScrollAnimationWrapper>
         <motion.div
           className="grid grid-flow-row sm:grid-flow-col grid-rows-2 md:grid-rows-1 sm:grid-cols-2 grid-rows-1 gap-2 py-6 sm:py-16"
@@ -67,7 +67,7 @@ const Hero = ({
               custom={{ duration: 2 + index }}
               variants={scrollAnimation}
             >
-              <div className="flex items-center mx-auto w-60 sm:w-auto">
+              <div className="flex items-center mx-auto w-60 sm:w-auto shadow-2xl">
                 <div className="flex items-center justify-center bg-blue-100 w-12 h-12 mr-6 rounded-full py-3">
                   <img src={listUsers.icon} className="h-6 w-6" />
                 </div>
@@ -81,7 +81,7 @@ const Hero = ({
           ))}
         </ScrollAnimationWrapper>
         <div
-          className="absolute bg-black-600 opacity-5 w-11/12 roudned-lg h-64 sm:h-48 top-0 mt-8 mx-auto left-0 right-0"
+          className="absolute shadow-2xl bg-black-600 opacity-5 w-11/12 roudned-lg h-64 sm:h-48 top-0 mt-8 mx-auto left-0 right-0"
           style={{ filter: "blur(114px)" }}
         ></div>
       </div>

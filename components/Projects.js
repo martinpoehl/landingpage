@@ -13,7 +13,7 @@ const Projects = () => {
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
 
   return (
-    <motion.div className=" from-black-500 to-white-500 w-full py-14" id="projects">
+    <motion.div className="shadow-2xl from-black-500 to-white-500 w-full py-14" id="projects">
       <div className="max-w-screen-xl  px-6 sm:px-8 lg:px-16 mx-auto flex flex-col w-full text-center justify-center">
         <div className="flex flex-col w-full">
           <ScrollAnimationWrapper>
