@@ -1,6 +1,6 @@
 import React from 'react'
 import SeoHead from "../components/SeoHead";
-import Footer from '../components/Layout/Footer';
+import Footer from '../components/Layout/FooterShort';
 import Header from '../components/Layout/Header';
 import About from '../components/About';
 
