@@ -35,11 +35,7 @@ const About = () => {
             <div class="col-span-4 sm:col-span-9">
                 <div class="bg-white-500 shadow rounded-lg p-6">
                     <h2 class="text-xl font-bold mb-4">Über mich</h2>
-                    <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed finibus est
-                        vitae tortor ullamcorper, ut vestibulum velit convallis. Aenean posuere risus non velit egestas
-                        suscipit. Nunc finibus vel ante id euismod. Vestibulum ante ipsum primis in faucibus orci luctus
-                        et ultrices posuere cubilia Curae; Aliquam erat volutpat. Nulla vulputate pharetra tellus, in
-                        luctus risus rhoncus id.
+                    <p class="text-gray-700">Mein Name ist Martin Pöhl und ich wohne und arbeite derzeit im Raum Zürich als Leiter ServiceDesk / System Engineer bei der Schweizerisch Technischen Fachschule in Winterthur (STFW). In meiner aktuellen Position arbeite ich an verschiedenen IT-Projekten und bin auch als Berufsbildner tätig. Im Jahr 2021 habe ich die HF zum "Dipl. Techniker HF Informatik" erfolgreich abgeschlossen, bei der ich bereits viel Erfahrung in der Programmierung sammeln konnte. Meine Leidenschaft für die Programmierung begann in dieser Zeit, und hat sich seitdem verstärkt. Ich habe daher im Jahr 2022 ein anspruchsvolles Bootcamp zum Fullstack Developer in Zürich absolviert. Nun arbeite ich auch im Geschäft an kleineren Web-Applikationen und privat an Projekten. Mein Ziel ist es, mich vollständig auf die Programmierung zu konzentrieren und meine Fähigkeiten weiter zu verbessern. Mit meiner Erfahrung und meinem Wissen in der IT-Branche hoffe ich, eine wertvolle Bereicherung für jedes Team zu sein.
                     </p>
 
                     <h3 class="font-semibold text-center mt-3 -mb-2">

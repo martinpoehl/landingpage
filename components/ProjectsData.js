@@ -7,24 +7,24 @@ import ArrowNext from "../public/assets/Icon/eva_arrow-next-fill.svg";
 const ProjectsData = ({
   listProjects = [
     {
+      name: "Schweizer Fusspflege AG",
+      image: "/assets/schweizerfusspflege.png",
+      info: "Schweizer Fusspflege - An 3 Standorten in der Schweiz",
+    },
+    {
+      name: "Regioport AG",
+      image: "/assets/regioport.png",
+      info: "Regioport AG - Ein Bootshafen am Dreiländereck!",
+    },
+    {
       name: "AI-Assistent",
       image: "/assets/ai-assist.png",
-      info: "Ein KI-Assistent für verschidenste Bereiche ...",
+      info: "Ein KI-Assistent für die Erstellung der verschidensten Bereiche",
     },
     {
       name: "Groomify",
       image: "",
-      info: "...",
-    },
-    {
-      name: "Schweizer Fusspflege AG",
-      image: "",
-      info: "...",
-    },
-    {
-      name: "Regioport AG",
-      image: "",
-      info: "...",
+      info: "Groomify, eine Hunde-Dienstleisungs-Webapplikation entwickelt. Damit Hundebesitzer, und auch Hundesalonbetreiber sich ganz einfach auf einer Plattform finden gegenseitig bewerten können. In der Schweiz gibt es diese Art von Hundesalon-Platform noch nicht. Im Ausland hingegen schon.",
     },
   ],
 }) => {
@@ -75,9 +75,9 @@ const ProjectsData = ({
             
               <div className="flex flex-col xl:flex-row w-full items-stretch xl:items-center">
                 <div className="flex order-2 xl:order-1">
-                <div class="max-w-sm rounded overflow-hidden shadow-lg">
+                <div class="max-w-sm min-h-64 rounded overflow-hidden shadow-lg">
 
-                  <a href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                  <a href="#" class="flex flex-col items-center bg-white hover:border-orange-500 hover:border-2 border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
                       <img class="object-cover w-100 rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src={listProjects.image} alt=""/>
                       <div class="flex flex-col justify-between p-4 leading-normal">
                           <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{listProjects.name}</h5>

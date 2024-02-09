@@ -51,7 +51,7 @@ const Pricing = () => {
               variants={scrollAnimation}
               className="leading-normal w-10/12 sm:w-7/12 lg:w-6/12 mx-auto my-2 text-center"
             >
-              Entscheiden Sie sich für ein Paket Ihrer Wahl.
+              Ganz auf Ihre Bedrüfnisse angepasst.
             </motion.p>
           </ScrollAnimationWrapper>
           <div className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-3 gap-4 lg:gap-12 py-8 lg:py-12 px-6 sm:px-0 lg:px-6">
@@ -67,14 +67,6 @@ const Pricing = () => {
                     },
                   }}
                 >
-                  <div className="p-4 lg:p-0 lg:mt-8">
-                    <Image
-                      src={plan.src}
-                      width={145}
-                      height={165}
-                      alt={plan.name}
-                    />
-                  </div>
                   <p className="text-lg text-black-600 font-medium capitalize my-2 sm:my-7">
                     {plan.name}
                   </p>
@@ -89,7 +81,7 @@ const Pricing = () => {
                     <p className="text-2xl text-black-600 text-center mb-4 ">
                       {plan.preis}
                     </p>
-                    <ButtonOutline>Auswählen</ButtonOutline>
+                    <ButtonOutline><a href="/contact">Auswählen</a></ButtonOutline>
                   </div>
                 </motion.div>
               </ScrollAnimationWrapper>

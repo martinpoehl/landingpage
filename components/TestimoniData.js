@@ -9,7 +9,7 @@ const TestimoniData = ({
   listTestimoni = [
     {
       name: "Karin Schweizer",
-      image: "/assets/icon/user.svg",
+      image: "/assets/icon/avatar-person.svg",
       city: "Birr",
       country: " Schweiz",
       rating: "5",
@@ -17,7 +17,7 @@ const TestimoniData = ({
     },
     {
       name: "Michael Oeri",
-      image: "/assets/icon/user.svg",
+      image: "/assets/icon/avatar-person.svg",
       city: "St.Moritz",
       country: " Schweiz",
       rating: "5",
@@ -69,16 +69,11 @@ const TestimoniData = ({
       >
         {listTestimoni.map((listTestimonis, index) => (
           <div className="px-3 flex items-stretch" key={index}>
-            <div className="border-2 border-gray-500 hover:border-orange-500 transition-all rounded-lg p-8 flex flex-col">
+            <div className="border-2 border-gray-500 transition-all rounded-lg p-8 flex flex-col">
               <div className="flex flex-col xl:flex-row w-full items-stretch xl:items-center">
                 <div className="flex order-2 xl:order-1">
-                  <Image
-                    src={listTestimonis.image}
-                    height={50}
-                    width={50}
-                    alt="Icon People"
-                  />
-                  <div className="flex flex-col ml-5 text-left">
+                  
+                  <div className="flex flex-col text-left">
                     <p className="text-lg text-black-600 capitalize">
                       {listTestimonis.name}
                     </p>

@@ -54,7 +54,7 @@ const Hero = ({
             <p className="text-black-500 mt-4 mb-6">
             Dann setzen Sie sich doch mit mir in Verbindung.
             </p>
-            <ButtonPrimary>Anfragen</ButtonPrimary>
+            <ButtonPrimary><a href="/contact">Anfragen</a></ButtonPrimary>
           </div>
         </motion.div>
       </ScrollAnimationWrapper>

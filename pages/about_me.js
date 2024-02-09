@@ -1,16 +1,16 @@
 import React from 'react'
 import SeoHead from "../components/SeoHead";
-import Footer from '../components/Layout/FooterShort';
-import Header from '../components/Layout/Header';
+import FooterShort from '../components/Layout/FooterShort';
+import HeaderShort from '../components/Layout/HeaderShort';
 import About from '../components/About';
 
 const AboutMePage = () => {
   return (
     <>
       <SeoHead title="Martin Pöhl - Über mich" />
-      <Header />
+      <HeaderShort />
       <About />
-      <Footer />
+      <FooterShort />
     </>
   )
 }

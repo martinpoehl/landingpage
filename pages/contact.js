@@ -1,14 +1,14 @@
 import React from 'react'
-import Footer from '../components/Layout/FooterShort'
-import Header from '../components/Layout/Header'
+import FooterShort from '../components/Layout/FooterShort'
+import HeaderShort from '../components/Layout/HeaderShort'
 import Contact from '../components/Contact'
 
 const ContactPage = () => {
   return (
     <div>
-        <Header />
+        <HeaderShort />
         <Contact />
-        <Footer />
+        <FooterShort />
     </div>
     
   )

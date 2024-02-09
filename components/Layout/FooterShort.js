@@ -26,7 +26,7 @@ const Footer = () => {
               <Instagram className="h-6 w-6" />
             </div>
             <div className="mx-2 bg-white-500 rounded-full items-center justify-center flex p-2 shadow-md">
-              <Github className="h-6 w-6" />
+              <a href="https://github.com/martinpoehl"><Github className="h-6 w-6" /></a>
             </div>
           </div>
           <p className="text-gray-400">
