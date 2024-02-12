@@ -1,7 +1,7 @@
 import React from "react";
 import Logo from "/public/assets/Logo.png";
 import Github from "../../public/assets/Icon/gridicon_github.svg";
-import Instagram from "../../public/assets/Icon/instagram.svg";
+import Linkedin from "../../public/assets/Icon/linkedin.svg";
 import Image from "next/image";
 
 const Footer = () => {
@@ -23,7 +23,7 @@ const Footer = () => {
           </p>
           <div className="flex w-full mt-2 mb-8 -mx-2">
             <div className="mx-2 bg-white-500 rounded-full items-center justify-center flex p-2 shadow-md">
-              <Instagram className="h-6 w-6" />
+              <Linkedin className="h-6 w-6" />
             </div>
             <div className="mx-2 bg-white-500 rounded-full items-center justify-center flex p-2 shadow-md">
               <a href="https://github.com/martinpoehl"><Github className="h-6 w-6" /></a>
