@@ -6,6 +6,7 @@ import Contact from '../components/Contact'
 const ContactPage = () => {
   return (
     <div>
+        <SeoHead title="Martin Pöhl - Kontakt" />
         <HeaderShort />
         <Contact />
         <FooterShort />
