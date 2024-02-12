@@ -2,12 +2,12 @@ import React from 'react'
 
 const About = () => {
   return (
-    <div id='contact' className="w-full justify-center mt-40 mb-20">
+    <div id='contact' className="w-full justify-center mb-20">
       <div class="bg-gray-100">
     <div class="container mx-auto md:p-10">
-        <div class="grid grid-cols-4 sm:grid-cols-12 gap-6 px-4">
+        <div class="mt-20 grid grid-cols-4 lg:mx-40 sm:grid-cols-12 gap-6 px-4">
             <div class="col-span-4 sm:col-span-3">
-                <div class="bg-white-500 shadow rounded-lg p-6">
+                <div class="bg-white-500 shadow rounded-lg p-4">
                     <div class="flex flex-col items-center">
                         <img src="/assets/me.jpg" class="w-40 h-40 bg-gray-300 rounded-full mb-4 shrink-0">
 
@@ -20,14 +20,18 @@ const About = () => {
                         </div>
                     </div>
                     <hr class="my-6 border-t border-gray-300"/>
-                    <div class="flex flex-col">
+                    <div class="flex flex-col p-4 justify-center">
                         <span class="text-gray-700 uppercase font-bold tracking-wider mb-2">Skills</span>
                         <ul>
+                            <li class="mb-2">HTML/CSS</li>
                             <li class="mb-2">JavaScript</li>
                             <li class="mb-2">React</li>
                             <li class="mb-2">Node.js</li>
-                            <li class="mb-2">HTML/CSS</li>
                             <li class="mb-2">Tailwind Css</li>
+                            <li class="mb-2">Python</li>
+                            <li class="mb-2">Django</li>
+                            <li class="mb-2">MySQL</li>
+                            <li class="mb-2">...</li>
                         </ul>
                     </div>
                 </div>
@@ -35,11 +39,12 @@ const About = () => {
             <div class="col-span-4 sm:col-span-9">
                 <div class="bg-white-500 shadow rounded-lg p-6">
                     <h2 class="text-xl font-bold mb-4">Über mich</h2>
-                    <p class="text-gray-700">Mein Name ist Martin Pöhl und ich wohne und arbeite derzeit im Raum Zürich als Leiter ServiceDesk / System Engineer bei der Schweizerisch Technischen Fachschule in Winterthur (STFW). In meiner aktuellen Position arbeite ich an verschiedenen IT-Projekten und bin auch als Berufsbildner tätig. Im Jahr 2021 habe ich die HF zum "Dipl. Techniker HF Informatik" erfolgreich abgeschlossen, bei der ich bereits viel Erfahrung in der Programmierung sammeln konnte. Meine Leidenschaft für die Programmierung begann in dieser Zeit, und hat sich seitdem verstärkt. Ich habe daher im Jahr 2022 ein anspruchsvolles Bootcamp zum Fullstack Developer in Zürich absolviert. Nun arbeite ich auch im Geschäft an kleineren Web-Applikationen und privat an Projekten. Mein Ziel ist es, mich vollständig auf die Programmierung zu konzentrieren und meine Fähigkeiten weiter zu verbessern. Mit meiner Erfahrung und meinem Wissen in der IT-Branche hoffe ich, eine wertvolle Bereicherung für jedes Team zu sein.
+                    <p class="text-gray-700">Mein Name ist Martin Pöhl, und derzeit lebe und arbeite ich im Raum Zürich als Leiter des ServiceDesks/System Engineers. In meiner gegenwärtigen Position bin ich an diversen IT-Projekten beteiligt und fungiere auch als Ausbilder. Meine Leidenschaft für die Programmierung zeigt sich sowohl in meiner Freizeit als auch in meiner beruflichen Tätigkeit, wo ich an der Entwicklung von Web-Applikationen und Websites arbeite. Mit meiner langjährigen Erfahrung und meinem fundierten Wissen in der IT-Branche bringe ich eine grossen Mehrwert und bilde mich stets weiter.
+
                     </p>
 
                     <h3 class="font-semibold text-center mt-3 -mb-2">
-                        Find me on
+                        Man findet mich auch auf
                     </h3>
                     <div class="flex justify-center items-center gap-6 my-6">
                         <a class="text-gray-700 hover:text-orange-600" aria-label="Visit TrendyMinds LinkedIn" href=""
@@ -102,7 +107,7 @@ const About = () => {
                     </div>
                     <div class="mb-6">
                         <div class="flex justify-between flex-wrap gap-2 w-full">
-                            <span class="text-gray-700 font-bold">Web Developer</span>
+                            <span class="text-gray-700 font-bold">ICT-Specialist</span>
                             <p>
                                 <span class="text-gray-700 mr-2">at ABC Company</span>
                                 <span class="text-gray-700">2017 - 2019</span>

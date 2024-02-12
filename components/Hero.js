@@ -31,7 +31,7 @@ const Hero = ({
     <div className="max-w-screen-xl mt-24 px-8 xl:px-16 mx-auto shadow-2xl" id="hero">
       <ScrollAnimationWrapper>
         <motion.div
-          className="grid grid-flow-row sm:grid-flow-col grid-rows-2 md:grid-rows-1 sm:grid-cols-2 grid-rows-1 gap-2 py-6 sm:py-16"
+          className="grid grid-flow-row sm:grid-flow-col grid-rows-2 md:grid-rows-1 sm:grid-cols-2 grid-rows-1 gap-2 pb-6 sm:py-10"
           variants={scrollAnimation}
         >
           <div className="flex w-full">
