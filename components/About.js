@@ -2,18 +2,19 @@ import React from 'react'
 
 const About = () => {
   return (
-    <div id='contact' className="w-full justify-center mb-20">
+    <div id='contact' className="w-full justify-center mb-10 mt-5">
       <div class="bg-gray-100">
-    <div class="container mx-auto md:p-10">
-        <div class="mt-20 grid grid-cols-4 lg:mx-40 sm:grid-cols-12 gap-6 px-4">
-            <div class="col-span-4 sm:col-span-3">
+    <div class="container mx-auto md:pt-5">
+        
+        <div class="mt-20 grid grid-cols-4 lg:mx-40 sm:grid-cols-12 gap-6 px-4 pt-4">
+        <div class="col-span-4 sm:col-span-3">
                 <div class="bg-white-500 shadow rounded-lg p-4">
                     <div class="flex flex-col items-center">
                         <img src="/assets/me.jpg" class="w-40 h-40 bg-gray-300 rounded-full mb-4 shrink-0">
 
                         </img>
                         <h1 class="text-xl font-bold">Martin Pöhl</h1>
-                        <p class="text-gray-700 mt-3">Webdeveloper &<br></br> System Engeener</p>
+                        <p className='item-center' class="text-gray-700 mt-3">Webdeveloper & System Engeener</p>
                         <div class="mt-6 flex flex-wrap gap-4 justify-center">
                             <a href="#" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded">Contact</a>
                             <a href="#" class="bg-gray-300 hover:bg-gray-400 text-gray-700 py-2 px-4 rounded">Resume</a>
