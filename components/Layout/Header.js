@@ -77,7 +77,8 @@ const Header = () => {
                 Über mich
               </a>
             </Link>
-            <a href="/contact"><ButtonOutline>Kontakt</ButtonOutline></a>
+            <Link href="/contact"><a><ButtonOutline>Kontakt</ButtonOutline></a></Link>
+            
             
           </div>
         </nav>

@@ -54,7 +54,7 @@ const Hero = ({
             <p className="text-black-500 mt-4 mb-6">
             Dann setzen Sie sich doch mit mir in Verbindung.
             </p>
-            <ButtonPrimary><a href="/contact">Anfragen</a></ButtonPrimary>
+            <a href="/contact"><ButtonPrimary>Anfragen</ButtonPrimary></a>
           </div>
         </motion.div>
       </ScrollAnimationWrapper>
@@ -68,7 +68,7 @@ const Hero = ({
               variants={scrollAnimation}
             >
               <div className="flex items-center mx-auto w-60 sm:w-auto shadow-2xl">
-                <div className="flex items-center justify-center bg-blue-100 w-12 min-w-12 h-12 mr-6 rounded-full py-3">
+                <div className="bg-blue-100 flex items-center justify-center w-12 min-w-12 h-12 mr-6 rounded-full py-3">
                   <img src={listUsers.icon} className="h-6 w-6" />
                 </div>
                 <div className="py-3">
