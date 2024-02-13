@@ -9,7 +9,7 @@ import Main from "/public/assets/Main.json";
 const Hero = ({
   listUser = [
     {
-      name: "Webseite",
+      name: "Webseite oder App",
       number: "",
       icon: "/assets/Icon/heroicons_sm-user.svg",
     },
