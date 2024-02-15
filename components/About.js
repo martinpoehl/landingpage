@@ -10,7 +10,7 @@ const About = () => {
         <div class="col-span-4 sm:col-span-3">
                 <div class="bg-white-500 shadow rounded-lg p-4">
                     <div class="flex flex-col items-center">
-                        <img src="/assets/me.jpg" class="w-40 h-40 bg-gray-300 rounded-full my-4 shrink-0">
+                        <img src="/assets/me.jpg" class="rounded-full border-2 p-2 z-3 my-6 shrink-0">
 
                         </img>
                         <h1 class="text-xl font-bold">Martin Pöhl</h1>
@@ -38,7 +38,7 @@ const About = () => {
             </div>
             <div class="col-span-4 sm:col-span-9">
                 <div class="bg-white-500 shadow rounded-lg p-6">
-                    <h2 class="text-xl font-bold mb-4 flex justify-center items-center gap-6 my-6">Über mich</h2>
+                    <h1 class="text-2xl font-bold mb-4 flex justify-center items-center gap-6 my-6"><span style={{color: "#f43855"}}>Über mich</span></h1>
                     <p class="text-gray-700">Mein Name ist Martin Pöhl und derzeit bin ich im Raum Zürich tätig, sowohl als Leiter eines ServiceDesks als auch als System Engineer. In meiner gegenwärtigen Position bin ich an diversen IT-Projekten beteiligt und fungiere auch als Ausbilder. Ich bin seit über 10 Jahren in der IT tätig. Meine Leidenschaft für die Programmierung zeigt sich sowohl in meiner Freizeit als auch in meiner beruflichen Tätigkeit, wo ich an der Entwicklung von Web-Applikationen und Websites arbeite. Mit meiner langjährigen Erfahrung und meinem fundierten Wissen in der IT-Branche bringe ich eine grossen Mehrwert und bilde mich stets weiter.
 
                     </p>

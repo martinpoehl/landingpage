@@ -32,7 +32,7 @@ const Contact = () => {
     <div id='contact' className="w-full justify-center mt-40 mb-10">
       <section className="bg-white dark:bg-gray-900">
         <div className="lg:pb-16 px-4 mx-auto max-w-screen-lg">
-          <h1 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Kontaktformular</h1>
+          <h1 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white"><span style={{color: "#f43855"}}>Kontakt</span>formular</h1>
           {submitted ? (
             <p style={{color: "#12CD36"}} className="mb-8 text-semibold lg:mb-16 text-center dark:text-gray-400 sm:text-xl">Vielen Dank für Ihre Nachricht. Ich werde mich so schnell wie möglich bei Ihnen melden!</p>
           ) : (
