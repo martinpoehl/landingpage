@@ -32,10 +32,11 @@ const Contact = () => {
     <div id='contact' className="w-full justify-center mt-40 mb-10">
       <section className="bg-white dark:bg-gray-900">
         <div className="lg:pb-16 px-4 mx-auto max-w-screen-lg">
-          <h1 className="mb-4 text-3xl lg:text-4xl xl:text-5xl font-medium text-black-600 leading-normal text-center"><span style={{color: "#f43855"}}>Kontakt</span>formular</h1>
           {submitted ? (
-            <p style={{color: "#12CD36"}} className="mb-8 text-semibold lg:mb-16 text-center dark:text-gray-400 sm:text-xl">Vielen Dank für Ihre Nachricht. Ich werde mich so schnell wie möglich bei Ihnen melden!</p>
+            <p style={{color: "#12CD36"}} className="mt-8 mb-60 text-3xl lg:text-4xl xl:text-5xl font-medium text-black-600 leading-normal text-center">Vielen Dank für Ihre Nachricht. Ich werde mich so schnell wie möglich bei Ihnen melden!</p>
           ) : (
+            <div>
+            <h1 className="mb-4 text-3xl lg:text-4xl xl:text-5xl font-medium text-black-600 leading-normal text-center"><span style={{color: "#f43855"}}>Kontakt</span>formular</h1>
             <form onSubmit={handleSubmit} className="space-y-8">
               <div className="grid grid-cols-2 gap-x-4">
                 <div>
@@ -61,6 +62,7 @@ const Contact = () => {
               </div>
               <ButtonPrimary type="submit" className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Senden</ButtonPrimary>
             </form>
+            </div>
           )}
         </div>
       </section>
