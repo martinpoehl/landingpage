@@ -65,10 +65,10 @@ const Hero = ({
               variants={scrollAnimation}
             >
               <div className="flex items-center mx-auto w-60 sm:w-auto shadow-2xl">
-                <div className="bg-black-500 flex items-center justify-center w-12 min-w-12 h-12 mr-6 rounded-full py-3">
+                <div className="bg-black-500 flex items-center justify-center w-12 min-w-12 h-12 mr-6 rounded-full py-2">
                   <img src={listUsers.icon} className="h-6 w-6" />
                 </div>
-                <div className="py-3">
+                <div className="py-2">
                   <p className="text-xl text-black-100 font-bold max-w-40">
                     {listUsers.name}
                   </p>
