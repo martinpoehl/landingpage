@@ -52,7 +52,7 @@ const Hero = ({
 </h1>
 
             <p className="text-black-500 mt-4 mb-6">
-            Dann setzen Sie sich doch mit mir in Verbindung.
+            Dann setzen Sie sich mit mir in Verbindung.
             </p>
             <a href="/contact"><ButtonPrimary>Anfragen</ButtonPrimary></a>
           </div>
