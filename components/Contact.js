@@ -15,7 +15,7 @@ const Contact = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      await axios.post('/contact', formData);
+      await axios.post('', formData);
       setSubmitted(true);
     } catch (error) {
       console.error('Form submission error:', error);
@@ -33,7 +33,7 @@ const Contact = () => {
       <section className="bg-white dark:bg-gray-900">
         <div className="lg:pb-16 px-4 mx-auto max-w-screen-lg">
           {submitted ? (
-            <p style={{color: "#12CD36"}} className="mt-8 mb-60 text-3xl lg:text-4xl xl:text-5xl font-medium text-black-600 leading-normal text-center">Vielen Dank für Ihre Nachricht. Ich werde mich so schnell wie möglich bei Ihnen melden!</p>
+            <p style={{color: "#12CD36"}} className="mt-8 mb-60 text-3xl lg:text-4xl xl:text-5xl font-medium text-black-600 leading-normal text-center">Vielen Dank für Ihre Nachricht. Ich werde mich so schnell wie möglich bei Ihnen melden! 🙂</p>
           ) : (
             <div>
             <h1 className="mb-4 text-3xl lg:text-4xl xl:text-5xl font-medium text-black-600 leading-normal text-center"><span style={{color: "#f43855"}}>Kontakt</span>formular</h1>
