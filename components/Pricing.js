@@ -67,7 +67,7 @@ const Pricing = () => {
                     },
                   }}
                 >
-                  <p className="text-lg text-black-600 font-medium capitalize my-2 sm:my-7">
+                  <p style={{ color: '#f43855' }} className="text-xl text-black-600 font-medium capitalize my-2 sm:my-7">
                     {plan.name}
                   </p>
                   <ul className="flex flex-col list-inside pl-6 xl:pl-0 items-start justify-start text-left text-black-500 flex-grow">

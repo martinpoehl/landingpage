@@ -10,17 +10,14 @@ const Hero = ({
   listUser = [
     {
       name: "Webseite oder App",
-      number: "",
       icon: "/assets/Icon/heroicons_sm-user.svg",
     },
     {
-      name: "SEO",
-      number: "",
+      name: "SEO Optimierung",
       icon: "/assets/Icon/gridicons_location.svg",
     },
     {
       name: "Wartung & Support",
-      number: "",
       icon: "/assets/Icon/bx_bxs-server.svg",
     },
   ],
@@ -68,7 +65,7 @@ const Hero = ({
               variants={scrollAnimation}
             >
               <div className="flex items-center mx-auto w-60 sm:w-auto shadow-2xl">
-                <div className="bg-blue-100 flex items-center justify-center w-12 min-w-12 h-12 mr-6 rounded-full py-3">
+                <div className="bg-black-500 flex items-center justify-center w-12 min-w-12 h-12 mr-6 rounded-full py-3">
                   <img src={listUsers.icon} className="h-6 w-6" />
                 </div>
                 <div className="py-3">
