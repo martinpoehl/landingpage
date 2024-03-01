@@ -6,17 +6,18 @@ export default async function handler(req, res) {
 
     // Create a transporter object using SMTP transport
     const transporter = nodemailer.createTransport({
-      host: 'smtp.gmail.com',
-      port: 465,
+      host: 'asmtp.mail.hostpoint.ch',
+      port: 25,
+      secure: true,
       auth: {
-        user: 'regioportag@gmail.com',
-        pass: 'G4zamTxa'
+        user: process.env.EMAIL_USERNAME,
+        pass: process.env.EMAIL_PASSWORD
       }
     });
 
     // Setup email data
     const mailOptions = {
-      from: 'regioportag@gmail.com',
+      from: 'info@martinpoehl.me',
       to: 'martinpoehl@me.com',
       subject: 'New Form Submission',
       text: `
