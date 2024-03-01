@@ -37,7 +37,7 @@ const Contact = () => {
           ) : (
             <div>
             <h1 className="mb-4 text-3xl lg:text-4xl xl:text-5xl font-medium text-black-600 leading-normal text-center"><span style={{color: "#f43855"}}>Kontakt</span>formular</h1>
-            <form onSubmit={handleSubmit} className="space-y-8">
+            <form onSubmit={handleSubmit} className="space-y-8 pt-5">
               <div className="grid grid-cols-2 gap-x-4">
                 <div>
                   <label htmlFor="firstName" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Vorname</label>

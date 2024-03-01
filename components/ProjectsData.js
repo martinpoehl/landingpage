@@ -26,8 +26,8 @@ const ProjectsData = ({
     },
     {
       name: "Groomify",
-      image: "",
-      info: "Groomify, eine Hunde-Dienstleisungs-Webapplikation entwickelt. Damit Hundebesitzer, und auch Hundesalonbetreiber sich ganz einfach auf einer Plattform finden gegenseitig bewerten können. In der Schweiz gibt es diese Art von Hundesalon-Platform noch nicht. Im Ausland hingegen schon.",
+      image: "/assets/groomify.png",
+      info: "Eine Hunde-Dienstleisungs-Webapplikation, wo Kunden und Geschäfte sich finden",
       url: "",
     },
   ],
