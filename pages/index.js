@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 import Products from "../components/Products";
 import Pricing from "../components/Pricing";
 import Hero from "../components/Hero";

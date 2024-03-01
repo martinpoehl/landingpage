@@ -8,7 +8,7 @@ export default async function handler(req, res) {
     const transporter = nodemailer.createTransport({
       host: 'asmtp.mail.hostpoint.ch',
       port: 25,
-      secure: false, // Changed to false
+      secure: false,
       auth: {
         user: process.env.EMAIL_USERNAME,
         pass: process.env.EMAIL_PASSWORD
