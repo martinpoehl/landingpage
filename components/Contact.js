@@ -15,7 +15,7 @@ const Contact = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      await axios.post('', formData);
+      await axios.post('/api/submit-form.js', formData);
       setSubmitted(true);
     } catch (error) {
       console.error('Form submission error:', error);
