@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-// Import react scroll
+import Typewriter from 'typewriter-effect/dist/core';
 import { Link as LinkScroll } from "react-scroll";
-import ButtonOutline from "../misc/ButtonOutline.";
+import ButtonOutline from "../misc/ButtonOutline";
 
 const Header = () => {
   const NavItems = [
@@ -42,7 +42,7 @@ const Header = () => {
             
             <div className="ml-4 mb-1">
               <a href="/" className="drop-shadow-lg font-bold font-mono text-sm md:text-xl">
-                Martin <br />
+                Martin <br/>
                 Pöhl
               </a>
             </div>
