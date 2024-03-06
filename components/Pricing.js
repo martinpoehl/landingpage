@@ -12,13 +12,11 @@ const Pricing = () => {
       name: "Standart",
       products: [{ name: "Webseite erstellen" }],
       src: "/assets/Free.png",
-      preis: "200.- CHF",
     },
     {
       name: "Plus",
       products: [{ name: "Webseite erstellen" }, { name: "Hosting" }],
       src: "/assets/Standard.png",
-      preis: "300.- CHF",
     },
     {
       name: "Pro",
@@ -29,7 +27,6 @@ const Pricing = () => {
         { name: "Support" },
       ],
       src: "/assets/Premium.png",
-      preis: "500.- CHF",
     },
   ];
 
@@ -51,7 +48,7 @@ const Pricing = () => {
               variants={scrollAnimation}
               className="leading-normal w-10/12 sm:w-7/12 lg:w-6/12 mx-auto my-2 text-center"
             >
-              Ganz auf Ihre Bedrüfnisse angepasst.
+              Die individuellen Bedürfnisse und Kosten können im Rahmen des Erstgesprächs festgelegt werden.
             </motion.p>
           </ScrollAnimationWrapper>
           <div className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-3 gap-4 lg:gap-12 py-8 lg:py-12 px-6 sm:px-0 lg:px-6">
@@ -78,10 +75,7 @@ const Pricing = () => {
                     ))}
                   </ul>
                   <div className="flex flex-col w-full justify-center mb-8 flex-none mt-12">
-                    <p className="text-2xl text-black-600 text-center mb-4 ">
-                      {plan.preis}
-                    </p>
-                    <ButtonOutline><a href="/contact">Auswählen</a></ButtonOutline>
+                    <ButtonOutline><a href="/contact">Anfragen</a></ButtonOutline>
                   </div>
                 </motion.div>
               </ScrollAnimationWrapper>
