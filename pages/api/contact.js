@@ -19,13 +19,15 @@ export default async function handler(req, res) {
     const mailOptions = {
       from: 'info@martinpoehl.me',
       to: 'martinpoehl@me.com',
-      subject: 'New Form Submission',
+      subject: 'Formular: Landingpage',
       text: `
-        First Name: ${firstName}
-        Last Name: ${lastName}
+        Vorname: ${firstName}
+        Nachname: ${lastName}
         Email: ${email}
-        Phone: ${phone}
-        Message: ${message}
+        Telefonnummer: ${phone}
+
+        Nachricht: 
+        ${message}
       `
     };
 
