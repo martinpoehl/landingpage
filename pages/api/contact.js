@@ -25,9 +25,7 @@ export default async function handler(req, res) {
         Nachname: ${lastName}
         Email: ${email}
         Telefonnummer: ${phone}
-
-        Nachricht: 
-        ${message}
+        Nachricht: ${message}
       `
     };
 
