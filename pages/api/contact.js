@@ -33,8 +33,8 @@ export default async function handler(req, res) {
         res.status(500).json({ error: 'Failed to submit form' });
       }
     })();
-  } else {
-    res.status(405).json({ error: 'Method Not Allowed' });
-  }
+    } else {
+      res.status(405).json({ error: 'Method Not Allowed' });
+    }
 }
 

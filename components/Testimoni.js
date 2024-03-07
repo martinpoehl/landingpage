@@ -22,7 +22,7 @@ const Testimoni = () => {
             <motion.p
               variants={scrollAnimation}
               className="leading-normal w-10/12 sm:w-7/12 lg:w-6/12 mx-auto my-2 text-center"
-            >Hier sind einige zufriedene Kundenbeispiele.</motion.p>
+            >Auflistung bisheriger Kunden.</motion.p>
             
           </ScrollAnimationWrapper>
         </div>
