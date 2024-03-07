@@ -1,16 +1,24 @@
-import sgMail from '@sendgrid/mail';
+import nodemailer from 'nodemailer';
 
 export default async function handler(req, res) {
   if (req.method === 'POST') {
     const { firstName, lastName, email, phone, message } = req.body;
 
-    // Set your SendGrid API key
-    sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+    // Create a transporter object using SMTP transport
+    const transporter = nodemailer.createTransport({
+      host: 'asmtp.mail.hostpoint.ch',
+      port: 25,
+      secure: false,
+      auth: {
+        user: process.env.EMAIL_USERNAME,
+        pass: process.env.EMAIL_PASSWORD
+      }
+    });
 
     // Setup email data
-    const msg = {
-      to: 'martinpoehl@me.com', // recipient email
+    const mailOptions = {
       from: 'info@martinpoehl.me',
+      to: 'martinpoehl@me.com',
       subject: 'Formular: Landingpage',
       text: `
         Vorname: ${firstName}
@@ -23,14 +31,15 @@ export default async function handler(req, res) {
     };
 
     // Send email
-    try {
-      await sgMail.send(msg);
-      console.log('Email sent successfully');
-      res.status(200).json({ message: 'Form submitted successfully' });
-    } catch (error) {
-      console.error('Email sending error:', error.response.body.errors);
-      res.status(500).json({ error: 'Failed to submit form' });
-    }
+    await transporter.sendMail(mailOptions, (error, info) => {
+      if (error) {
+        console.error('Email sending error:', error);
+        res.status(500).json({ error: 'Failed to submit form' });
+      } else {
+        console.log('Email sent:', info.response);
+        res.status(200).json({ message: 'Form submitted successfully' });
+      }
+    });
   } else {
     res.status(405).json({ error: 'Method Not Allowed' });
   }
