@@ -55,16 +55,16 @@ const Hero = ({
           </div>
         </motion.div>
       </ScrollAnimationWrapper>
-      <div className="relative w-full flex">
+      <div className="relative flex">
         <ScrollAnimationWrapper className="rounded-lg w-full grid grid-flow-row sm:grid-flow-row grid-cols-1 sm:grid-cols-3 py-1 divide-y-2 sm:divide-y-0 sm:divide-x-2 divide-gray-100 bg-white-500 z-10">
           {listUser.map((listUsers, index) => (
             <motion.div
-              className="flex items-center justify-start sm:justify-center py-4 sm:py-6 w-8/12 px-4 sm:w-auto mx-auto sm:mx-0"
+              className="flex items-center justify-start px-0 sm:justify-center py-2 sm:py-6 w-8/12 px-2 sm:w-auto mx-auto sm:mx-0"
               key={index}
               custom={{ duration: 2 + index }}
               variants={scrollAnimation}
             >
-              <div className="flex items-center mx-auto w-60 sm:w-auto shadow-2xl">
+              <div className="flex items-center sm:shadow-2xl">
                 <div className="bg-black-500 flex items-center justify-center w-12 min-w-12 h-12 mr-6 rounded-full py-2">
                   <img src={listUsers.icon} className="h-6 w-6" />
                 </div>

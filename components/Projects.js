@@ -30,7 +30,7 @@ const Projects = () => {
           
           </ScrollAnimationWrapper>
         </div>
-        <ScrollAnimationWrapper className="w-full flex flex-col py-12">
+        <ScrollAnimationWrapper className="w-full flex flex-col py-5">
           <motion.div variants={scrollAnimation}>
             <ProjectsData />
           </motion.div>

@@ -84,7 +84,7 @@ const TestimoniData = ({
                 </div>
               </div>
             
-              <p className="mt-5 text-left">{listTestimonis.testimoni}</p>
+              <p className="mt-5 text-left font-style: italic">{listTestimonis.testimoni}</p>
               
               <span className="flex mt-4">
                     <Stars className="h-4 w-4" />

@@ -37,7 +37,7 @@ const ProjectsData = ({
     customPaging: function (i) {
       return (
         <a className="">
-          <span className="mx-2 rounded-l-full rounded-r-full h-4 w-4 block cursor-pointer transition-all "></span>
+          <span className="mx-2 rounded-l-full rounded-r-full h-4 w-4 block cursor-pointer transition-all"></span>
         </a>
       );
     },
@@ -82,10 +82,10 @@ const ProjectsData = ({
                 <div class="max-w-sm min-h-64 rounded overflow-hidden shadow-lg">
 
                   <a href={listProjects.url} class="flex flex-col items-center bg-white hover:border-orange-500 hover:border-2 border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-                      <img class="object-cover w-100 rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src={listProjects.image} alt=""/>
+                      <img class="object-cover w-60 rounded-t-lg h-40 md:h-auto md:w-40 md:rounded-none md:rounded-s-lg" src={listProjects.image} alt=""/>
                       <div class="flex flex-col justify-between p-4 leading-normal">
-                          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{listProjects.name}</h5>
-                          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">{listProjects.info}</p>
+                          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white md: text-sm">{listProjects.name}</h5>
+                          <p class="mb-1 font-normal text-gray-700 dark:text-gray-400 md: text-sm">{listProjects.info}</p>
                       </div>
                   </a>
                 
