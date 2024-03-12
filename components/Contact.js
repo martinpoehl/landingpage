@@ -30,7 +30,7 @@ const Contact = () => {
   };
 
   return (
-    <div id='contact' className="w-full justify-center mt-40 mb-10">
+    <div id='contact' className="w-full justify-center mt-24 mb-10 sm:mt-40">
       <section className="bg-white dark:bg-gray-900">
         <div className="lg:pb-16 px-4 mx-auto max-w-screen-lg">
           {submitted ? (
