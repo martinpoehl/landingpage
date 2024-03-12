@@ -21,8 +21,8 @@ const Testimoni = () => {
             </motion.h3>
             <motion.p
               variants={scrollAnimation}
-              className="leading-normal w-10/12 sm:w-7/12 lg:w-6/12 mx-auto my-2 text-center"
-            >Auflistung bisheriger Kunden.</motion.p>
+              className="leading-normal w-10/12 sm:w-7/12 lg:w-6/12 mx-auto mt-2 text-center"
+            >Auflistung bisheriger Kundenbewertungen.</motion.p>
             
           </ScrollAnimationWrapper>
         </div>

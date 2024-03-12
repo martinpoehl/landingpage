@@ -59,7 +59,7 @@ const Hero = ({
         <ScrollAnimationWrapper className="rounded-lg w-full grid grid-flow-row sm:grid-flow-row grid-cols-1 sm:grid-cols-3 py-1 divide-y-2 sm:divide-y-0 sm:divide-x-2 divide-gray-100 bg-white-500 z-10">
           {listUser.map((listUsers, index) => (
             <motion.div
-              className="flex items-center justify-start px-0 sm:justify-center py-2 sm:py-6 w-8/12 px-2 sm:w-auto mx-auto sm:mx-0"
+              className="flex items-center justify-start py-3 sm:justify-center py-2 sm:py-6 w-11/12 px-2 md:w-auto mx-auto sm:mx-0"
               key={index}
               custom={{ duration: 2 + index }}
               variants={scrollAnimation}

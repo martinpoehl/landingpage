@@ -64,17 +64,17 @@ const Pricing = () => {
                     },
                   }}
                 >
-                  <p style={{ color: '#f43855' }} className="text-xl text-black-600 font-medium capitalize my-2 sm:my-7">
+                  <p style={{ color: '#f43855' }} className="text-2xl underline text-black-600 font-medium font-semibold capitalize my-5 sm:my-4">
                     {plan.name}
                   </p>
-                  <ul className="flex flex-col list-inside pl-6 xl:pl-0 items-start justify-start text-left text-black-500 flex-grow">
+                  <ul className="flex flex-col list-inside pl-6 xl:pl-0 items-start justify-start text-left text-black-500 flex-grow mb-2">
                     {plan.products.map((product) => (
-                      <li className="relative check custom-list my-2">
+                      <li className="relative check custom-list my-1">
                         {product.name}
                       </li>
                     ))}
                   </ul>
-                  <div className="flex flex-col w-full justify-center mb-8 flex-none mt-12">
+                  <div className="flex flex-col w-full justify-center my-4 flex-none">
                     <ButtonOutline><a href="/contact">Anfragen</a></ButtonOutline>
                   </div>
                 </motion.div>
