@@ -21,7 +21,7 @@ const Projects = () => {
               variants={scrollAnimation}
               className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-relaxed"
             >
-              Meine <span style={{ color: '#f43855' }}>Projekte</span>
+              Bisherige <span style={{ color: '#f43855' }}>Projekte</span>
             </motion.h3>
             <motion.p
               variants={scrollAnimation}
