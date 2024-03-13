@@ -33,5 +33,4 @@ yarn-error.log*
 # vercel
 .vercel
 
-.envsendgrid.env
-sendgrid.env
+.env*.local
