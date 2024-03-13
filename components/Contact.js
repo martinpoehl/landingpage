@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import ButtonPrimary from './misc/ButtonPrimary';
+import Check from "/public/assets/Check.json";
+import Lottie from "lottie-react";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -34,8 +36,21 @@ const Contact = () => {
       <section className="bg-white dark:bg-gray-900">
         <div className="lg:pb-16 px-4 mx-auto max-w-screen-lg">
           {submitted ? (
-            <p style={{color: "#12CD36"}} className="mt-8 mb-60 text-3xl lg:text-4xl xl:text-5xl font-medium text-black-600 leading-normal text-center">Vielen Dank für Ihre Nachricht. Ich werde mich so schnell wie möglich bei Ihnen melden! 🙂</p>
-          ) : (
+            <>
+              <div className="flex w-full justify-center">
+                  <Lottie
+                    animationData={Check}
+                    alt="Works"
+                    layout="responsive"
+                    quality={100}
+                    height={414}
+                    width={508}
+                    loop={false}
+                  />
+              </div>
+              <p style={{color: "#12CD36"}} className="mt-8 mb-60 text-3xl lg:text-4xl xl:text-5xl font-medium text-black-600 leading-normal text-center">Vielen Dank für Ihre Nachricht. Ich werde mich so schnell wie möglich bei Ihnen melden! 🙂</p>
+            </>
+              ) : (
             <div>
             <h1 className="mb-4 text-3xl lg:text-4xl xl:text-5xl font-medium text-black-600 leading-normal text-center"><span style={{color: "#f43855"}}>Kontakt</span>formular</h1>
             <form onSubmit={handleSubmit} className="space-y-8 pt-5">
