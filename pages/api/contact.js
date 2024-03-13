@@ -1,20 +1,40 @@
-// using Twilio SendGrid's v3 Node.js Library
-// https://github.com/sendgrid/sendgrid-nodejs
-javascript
-const sgMail = require('@sendgrid/mail')
-sgMail.setApiKey(process.env.SENDGRID_API_KEY)
-const msg = {
-  to: 'martinpoehl@me.com',
-  from: 'info.martinpoehl@gmail.com',
-  subject: 'Sending with SendGrid is Fun',
-  text: 'and easy to do anywhere, even with Node.js',
-  html: '<strong>and easy to do anywhere, even with Node.js</strong>',
+import sgMail from '@sendgrid/mail';
+
+export default async function handler(req, res) {
+  if (req.method === 'POST') {
+    const { firstName, lastName, email, phone, message } = req.body;
+
+    // Set your SendGrid API key
+    sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+
+    // Setup email data
+    const msg = {
+      to: 'martinpoehl@me.com', // recipient email
+      from: 'info@martinpoehl.me',
+      subject: 'Formular: Landingpage',
+      text: `
+        Vorname: ${firstName}
+        Nachname: ${lastName}
+        Email: ${email}
+        Telefonnummer: ${phone}
+        Nachricht: 
+        ${message}
+      `
+    };
+
+    // Define an asynchronous function to await the email sending operation
+    (async () => {
+      try {
+        await sgMail.send(msg);
+        console.log('Email sent successfully');
+        res.status(200).json({ message: 'Form submitted successfully' });
+      } catch (error) {
+        console.error('Email sending error:', error.response.body.errors);
+        res.status(500).json({ error: 'Failed to submit form' });
+      }
+    })();
+    } else {
+      res.status(405).json({ error: 'Method Not Allowed' });
+    }
 }
-sgMail
-  .send(msg)
-  .then(() => {
-    console.log('Email sent')
-  })
-  .catch((error) => {
-    console.error(error)
-  })
+
