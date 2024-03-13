@@ -9,8 +9,8 @@ export default async function handler(req, res) {
 
     // Setup email data
     const msg = {
-      to: 'martinpoehl@me.com', // recipient email
-      from: 'info@martinpoehl.me',
+      to: 'martinpoehl@me.com',
+      from: 'info.martinpoehl@gmail.com',
       subject: 'Formular: Landingpage',
       text: `
         Vorname: ${firstName}
