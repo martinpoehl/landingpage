@@ -1,11 +1,11 @@
 import sgMail from '@sendgrid/mail';
 
+// Set your SendGrid API key
+sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+
 export default async function handler(req, res) {
   if (req.method === 'POST') {
     const { firstName, lastName, email, phone, message } = req.body;
-
-    // Set your SendGrid API key
-    sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
     // Setup email data
     const msg = {
@@ -33,8 +33,9 @@ export default async function handler(req, res) {
         res.status(500).json({ error: 'Failed to submit form' });
       }
     })();
-    } else {
-      res.status(405).json({ error: 'Method Not Allowed' });
-    }
+  } else {
+    res.status(405).json({ error: 'Method Not Allowed' });
+  }
 }
+
 
