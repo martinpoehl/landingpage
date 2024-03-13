@@ -25,12 +25,12 @@ const Projects = () => {
             </motion.h3>
             <motion.p
               variants={scrollAnimation}
-              className="pt-5 leading-normal w-10/12 sm:w-7/12 lg:w-6/12 mx-auto my-2 text-center"
+              className="leading-normal w-10/12 sm:w-7/12 lg:w-6/12 mx-auto my-2 text-center"
             >Mit langjähriger Expertise in verschiedenen IT-Bereichen.</motion.p>
           
           </ScrollAnimationWrapper>
         </div>
-        <ScrollAnimationWrapper className="w-full flex flex-col py-5">
+        <ScrollAnimationWrapper className="w-full flex flex-col py-5 mt-5">
           <motion.div variants={scrollAnimation}>
             <ProjectsData />
           </motion.div>
