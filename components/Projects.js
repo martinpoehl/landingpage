@@ -26,7 +26,7 @@ const Projects = () => {
             <motion.p
               variants={scrollAnimation}
               className="leading-normal w-10/12 sm:w-7/12 lg:w-6/12 mx-auto my-2 text-center"
-            >Mit langjähriger Expertise in verschiedenen IT-Bereichen.</motion.p>
+            >Langjährige Expertise in verschiedenen IT-Bereichen.</motion.p>
           
           </ScrollAnimationWrapper>
         </div>

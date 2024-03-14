@@ -17,12 +17,12 @@ const Testimoni = () => {
               variants={scrollAnimation}
               className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-relaxed"
             >
-              Zufriedene <span style={{ color: '#f43855' }}>Kunden</span>
+              <span style={{ color: '#f43855' }}>Kunden</span> Feedback
             </motion.h3>
             <motion.p
               variants={scrollAnimation}
               className="leading-normal w-10/12 sm:w-7/12 lg:w-6/12 mx-auto my-2 text-center"
-            >Auflistung bisheriger Kunden.</motion.p>
+            >Was sagen Kunden?</motion.p>
             
           </ScrollAnimationWrapper>
         </div>

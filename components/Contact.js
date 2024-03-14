@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import ButtonPrimary from './misc/ButtonPrimary';
 import Check from "/public/assets/Check.json";
 import Lottie from "lottie-react";
+import { animateScroll as scroll } from 'react-scroll';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -14,6 +15,14 @@ const Contact = () => {
   });
   const [submitted, setSubmitted] = useState(false);
 
+  useEffect(() => {
+    if (submitted) {
+      scroll.scrollToTop({
+        duration: 500,
+        smooth: true
+      });
+    }
+  }, [submitted]);
 
   const handleSubmit = async (event) => {
     event.preventDefault();

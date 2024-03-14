@@ -25,7 +25,7 @@ const Hero = ({
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
 
   return (
-    <div className="max-w-screen-xl mt-14 px-8 xl:px-16 mt-28 mx-auto shadow-2xl" id="hero">
+    <div className="max-w-screen-xl mt-14 px-8 xl:px-16 mt-18 mx-auto shadow-2xl" id="hero">
       <ScrollAnimationWrapper>
         <motion.div
           className="grid grid-flow-row sm:grid-flow-col grid-rows-2 md:grid-rows-1 sm:grid-cols-2 grid-rows-1 gap-2 pb-6 sm:py-10"
@@ -51,7 +51,7 @@ const Hero = ({
             <p className="text-black-500 mt-4 mb-6">
             Dann setzen Sie sich mit mir in Verbindung.
             </p>
-            <a href="/contact" className="w-full md:w-6/12"><ButtonPrimary >Beratung</ButtonPrimary></a>
+            <a href="/contact" className="w-full md:w-6/12"><ButtonPrimary >Kontaktieren</ButtonPrimary></a>
           </div>
         </motion.div>
       </ScrollAnimationWrapper>
