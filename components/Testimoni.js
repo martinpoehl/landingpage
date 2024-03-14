@@ -22,7 +22,7 @@ const Testimoni = () => {
             <motion.p
               variants={scrollAnimation}
               className="leading-normal w-10/12 sm:w-7/12 lg:w-6/12 mx-auto my-2 text-center"
-            >Was sagen Kunden?</motion.p>
+            >Was sagen bisherige Kunden?</motion.p>
             
           </ScrollAnimationWrapper>
         </div>
@@ -41,7 +41,7 @@ const Testimoni = () => {
                 <p>Ich werde mich umgehend bei Ihnen melden.</p>
               </div>
               <a className="w-full sm:w-6/12" href="mailto:martinpoehl@me.com">
-                <ButtonPrimary className="w-full sm:w-6/12">Email</ButtonPrimary>
+                <ButtonPrimary className="w-full sm:w-6/12 hover:shadow-orange-md">Email</ButtonPrimary>
               </a>
               
             </div>
