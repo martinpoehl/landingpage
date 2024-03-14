@@ -48,7 +48,7 @@ const Products = () => {
               {features.map((feature, index) => (
                 <motion.li
                   className="relative circle-check custom-list mt-5"
-                  custom={{ duration: 2 + index }}
+                  custom={{ duration: 0.5 + index }}
                   variants={scrollAnimation}
                   key={feature}
                   whileHover={{

@@ -49,7 +49,7 @@ const Hero = ({
 </h1>
 
             <p className="text-black-500 mt-4 mb-6">
-            Dann setzen Sie sich mit mir in Verbindung.
+            Dann kontaktieren Sie mich für eine Beratung.
             </p>
             <a href="/contact" className="w-full md:w-6/12"><ButtonPrimary >Kontaktieren</ButtonPrimary></a>
           </div>
@@ -61,7 +61,7 @@ const Hero = ({
             <motion.div
               className="flex items-center justify-start py-3 sm:justify-center py-2 sm:py-6 w-11/12 px-2 md:w-auto mx-auto sm:mx-0"
               key={index}
-              custom={{ duration: 2 + index }}
+              custom={{ duration: 0.5 + index }}
               variants={scrollAnimation}
             >
               <div className="flex items-center sm:shadow-2xl">
