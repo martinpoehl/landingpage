@@ -5,10 +5,10 @@ import getScrollAnimation from "../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
 
 const features = [
+  "Beratung",
   "Webseite erstellen",
   "Hosting",
   "Support",
-  "Beratung",
   "Weiterentwicklung",
 ];
 

@@ -9,17 +9,17 @@ const Pricing = () => {
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
   const plans = [
     {
-      name: "Standart",
+      name: "Einfach",
       products: [{ name: "Webseite erstellen" }],
       src: "/assets/Free.png",
     },
     {
-      name: "Plus",
+      name: "Mittel",
       products: [{ name: "Webseite erstellen" }, { name: "Hosting" }],
       src: "/assets/Standard.png",
     },
     {
-      name: "Pro",
+      name: "Professionell",
       products: [
         { name: "Beratung" },
         { name: "Webseite erstellen" },
@@ -56,7 +56,7 @@ const Pricing = () => {
               <ScrollAnimationWrapper className="flex justify-center">
                 <motion.div
                   variants={scrollAnimation}
-                  className="flex flex-col justify-center px-28 items-center border-2 border-gray-500 rounded-xl sm:py-4 px-4 lg:px-12 xl:px-20"
+                  className="flex flex-col justify-center px-10 items-center border-2 border-gray-500 rounded-xl md:py-4 px-4 lg:px-12 xl:px-20"
                   whileHover={{
                     scale: 1.1,
                     transition: {
