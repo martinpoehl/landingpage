@@ -25,7 +25,10 @@ const Hero = ({
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
 
   return (
-    <div className="max-w-screen-xl mt-14 px-8 xl:px-16 mt-18 mx-auto shadow-2xl" id="hero">
+    <div
+      className="max-w-screen-xl mt-14 px-8 xl:px-16 mt-18 mx-auto shadow-2xl"
+      id="hero"
+    >
       <ScrollAnimationWrapper>
         <motion.div
           className="grid grid-flow-row sm:grid-flow-col grid-rows-2 md:grid-rows-1 sm:grid-cols-2 grid-rows-1 gap-2 pb-6 sm:py-10"
@@ -45,12 +48,19 @@ const Hero = ({
           </div>
           <div className="pb-5 flex flex-col justify-center items-start row-start-2 sm:row-start-1">
             <h1 className="text-3xl lg:text-4xl xl:text-5xl font-medium text-black-600 leading-normal">
-              Möchten Sie eine <span style={{ color: '#f43855' }}>moderne Webseite</span> für Ihr Unternehmen?
+              Möchten Sie eine{" "}
+              <span style={{ color: "#f43855" }}>moderne Webseite</span> für Ihr
+              Unternehmen?
             </h1>
             <p className="text-black-500 mt-4 mb-6">
               Dann kontaktieren Sie mich für eine Beratung.
             </p>
-            <a href="/contact" className="w-full md:w-8/12 hover:shadow-orange-md"><ButtonPrimary>Kontaktieren</ButtonPrimary></a>
+            <a
+              href="/contact"
+              className="w-full md:w-8/12 hover:shadow-orange-md"
+            >
+              <ButtonPrimary>Kontaktieren</ButtonPrimary>
+            </a>
           </div>
         </motion.div>
       </ScrollAnimationWrapper>

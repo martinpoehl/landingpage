@@ -6,9 +6,7 @@ import { Link as LinkScroll } from "react-scroll";
 import ButtonOutline from "../misc/ButtonOutline";
 
 const Header = () => {
-  const NavItems = [
-    
-  ];
+  const NavItems = [];
 
   const [activeLink, setActiveLink] = useState(null);
   const [scrollActive, setScrollActive] = useState(false);
@@ -27,22 +25,24 @@ const Header = () => {
       >
         <nav className="max-w-screen-xl px-6 sm:px-8 lg:px-16 mx-auto grid grid-flow-col py-1 sm:py-4">
           <a href="/">
-          <div className="col-start-1 col-end-2 flex items-center">
-            
+            <div className="col-start-1 col-end-2 flex items-center">
               <Image
                 className="w-auto"
                 src={"/assets/Logo_lg.png"}
                 height={65}
                 width={65}
               />
-            
-            <div className="ml-4 mb-1">
-              <a href="/" className="drop-shadow-lg font-bold font-mono text-sm md:text-xl">
-                Martin <br />
-                Pöhl
-              </a>
+
+              <div className="ml-4 mb-1">
+                <a
+                  href="/"
+                  className="drop-shadow-lg font-bold font-mono text-sm md:text-xl"
+                >
+                  Martin <br />
+                  Pöhl
+                </a>
+              </div>
             </div>
-          </div>
           </a>
           <ul className="hidden lg:flex col-start-4 col-end-8 text-black-500  items-center">
             {NavItems.map((item) => (
@@ -73,8 +73,9 @@ const Header = () => {
                 Über mich
               </a>
             </Link>
-            <a href="/contact"><ButtonOutline>Kontakt</ButtonOutline></a>
-            
+            <a href="/contact">
+              <ButtonOutline>Kontakt</ButtonOutline>
+            </a>
           </div>
         </nav>
       </header>

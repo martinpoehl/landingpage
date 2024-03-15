@@ -68,27 +68,30 @@ const ProjectsData = ({
 
   return (
     <>
-      <Slider
-        {...settings}
-        arrows={false}
-        ref={setSliderRef}
-        className="flex"
-      >
+      <Slider {...settings} arrows={false} ref={setSliderRef} className="flex">
         {listProjects.map((listProjects, index) => (
           <div className="px-3" key={index}>
-            
-              <div className="flex flex-col xl:flex-row w-full border-gray-500 items-stretch xl:items-center">
-                <div className="flex order-2 xl:order-1">
+            <div className="flex flex-col xl:flex-row w-full border-gray-500 items-stretch xl:items-center">
+              <div className="flex order-2 xl:order-1">
                 <div class="max-w-sm min-h-64 rounded overflow-hidden shadow-lg">
-
-                  <a href={listProjects.url} class="flex flex-col border border-gray-500 items-center h-90 hover:md:border-orange-500 hover:border-2 rounded-lg shadow md:flex-row md:max-w-xl">
-                      <img class="object-cover w-60 rounded-t-lg md:w-40 md:rounded-none md:rounded-s-lg" src={listProjects.image} alt=""/>
-                      <div class="flex flex-col justify-between p-4 leading-normal">
-                          <h5 class="mb-2 text-2xl text-black-500 font-bold tracking-tight md:text-sm">{listProjects.name}</h5>
-                          <p class="mb-1 font-normal md:text-sm">{listProjects.info}</p>
-                      </div>
+                  <a
+                    href={listProjects.url}
+                    class="flex flex-col border border-gray-500 items-center h-90 hover:md:border-orange-500 hover:border-2 rounded-lg shadow md:flex-row md:max-w-xl"
+                  >
+                    <img
+                      class="object-cover w-60 rounded-t-lg md:w-40 md:rounded-none md:rounded-s-lg"
+                      src={listProjects.image}
+                      alt=""
+                    />
+                    <div class="flex flex-col justify-between p-4 leading-normal">
+                      <h5 class="mb-2 text-2xl text-black-500 font-bold tracking-tight md:text-sm">
+                        {listProjects.name}
+                      </h5>
+                      <p class="mb-1 font-normal md:text-sm">
+                        {listProjects.info}
+                      </p>
+                    </div>
                   </a>
-                
                 </div>
               </div>
             </div>

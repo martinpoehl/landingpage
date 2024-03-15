@@ -18,23 +18,23 @@ const Footer = () => {
             style={{ borderRadius: "6%" }}
           />
           <p className="my-4">
-            <strong className="font-medium">Martinpoehl</strong><br></br>Webseiten erstellen und
-            verwalten.
+            <strong className="font-medium">Martinpoehl</strong>
+            <br></br>Webseiten erstellen und verwalten.
           </p>
           <div className="flex w-full mt-2 mb-8 -mx-2">
             <div className="mx-2 bg-white-500 rounded-full items-center justify-center flex p-2 shadow-md">
-              <Linkedin className="h-6 w-6" />
+              <a href="https://ch.linkedin.com/in/martinpoehl">
+                <Linkedin className="h-6 w-6" />
+              </a>
             </div>
             <div className="mx-2 bg-white-500 rounded-full items-center justify-center flex p-2 shadow-md">
-              <a href="https://github.com/martinpoehl"><Github className="h-6 w-6" /></a>
+              <a href="https://github.com/martinpoehl">
+                <Github className="h-6 w-6" />
+              </a>
             </div>
           </div>
-          <p className="text-gray-400">
-            ©2023 - Martin Pöhl
-          </p>
-          
+          <p className="text-gray-400">©2023 - Martin Pöhl</p>
         </div>
-        
       </div>
     </div>
   );

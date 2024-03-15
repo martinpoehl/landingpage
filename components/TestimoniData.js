@@ -72,7 +72,6 @@ const TestimoniData = ({
             <div className="border-2 border-gray-500 transition-all rounded-lg p-7 flex flex-col">
               <div className="flex flex-col xl:flex-row w-full items-stretch xl:items-center">
                 <div className="flex order-2 xl:order-1">
-                  
                   <div className="flex flex-col text-left">
                     <p className="text-lg text-black-600 capitalize">
                       {listTestimonis.name}
@@ -83,15 +82,17 @@ const TestimoniData = ({
                   </div>
                 </div>
               </div>
-            
-              <p className="mt-5 text-left font-style: italic">{listTestimonis.testimoni}</p>
-              
+
+              <p className="mt-5 text-left font-style: italic">
+                {listTestimonis.testimoni}
+              </p>
+
               <span className="flex mt-4">
-                    <Stars className="h-4 w-4" />
-                    <Stars className="h-4 w-4" />
-                    <Stars className="h-4 w-4" />
-                    <Stars className="h-4 w-4" />
-                    <Stars className="h-4 w-4" />
+                <Stars className="h-4 w-4" />
+                <Stars className="h-4 w-4" />
+                <Stars className="h-4 w-4" />
+                <Stars className="h-4 w-4" />
+                <Stars className="h-4 w-4" />
               </span>
             </div>
           </div>

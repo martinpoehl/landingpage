@@ -12,11 +12,13 @@ const Pricing = () => {
       name: "Einfach",
       products: [{ name: "Webseite erstellen" }],
       src: "/assets/Free.png",
+      preis: "Ab 500.-",
     },
     {
       name: "Mittel",
       products: [{ name: "Webseite erstellen" }, { name: "Hosting" }],
       src: "/assets/Standard.png",
+      preis: "Ab 500.- + jährlich ca. 200.-",
     },
     {
       name: "Professionell",
@@ -26,6 +28,7 @@ const Pricing = () => {
         { name: "Support" },
       ],
       src: "/assets/Premium.png",
+      preis: "Ab 500.- + jährlich ca. 200.- + ca. 100.- pro Einsatz",
     },
   ];
 
@@ -41,13 +44,15 @@ const Pricing = () => {
               variants={scrollAnimation}
               className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-relaxed"
             >
-              Welche <span style={{ color: '#f43855' }}>Anforderungen</span> haben Sie?
+              Welche <span style={{ color: "#f43855" }}>Anforderungen</span>{" "}
+              haben Sie?
             </motion.h3>
             <motion.p
               variants={scrollAnimation}
               className="leading-normal w-10/12 sm:w-7/12 lg:w-6/12 mx-auto my-2 text-center"
             >
-              Die individuellen Bedürfnisse und Kosten können im Rahmen des Erstgesprächs festgelegt werden.
+              Die individuellen Bedürfnisse und Kosten können im Rahmen des
+              Erstgesprächs festgelegt werden.
             </motion.p>
           </ScrollAnimationWrapper>
           <div className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-3 gap-4 lg:gap-12 py-8 lg:py-12 px-6 sm:px-0 lg:px-6">
@@ -63,7 +68,10 @@ const Pricing = () => {
                     },
                   }}
                 >
-                  <p style={{ color: '#f43855' }} className="text-2xl underline text-black-600 font-medium font-semibold capitalize my-5 sm:my-4">
+                  <p
+                    style={{ color: "#f43855" }}
+                    className="text-2xl underline text-black-600 font-medium font-semibold capitalize my-5 sm:my-4"
+                  >
                     {plan.name}
                   </p>
                   <ul className="flex flex-col list-inside pl-6 xl:pl-0 items-start justify-start text-left text-black-500 flex-grow mb-2">
@@ -74,7 +82,9 @@ const Pricing = () => {
                     ))}
                   </ul>
                   <div className="flex flex-col w-full justify-center my-4 flex-none">
-                    <ButtonOutline><a href="/contact">Anfragen</a></ButtonOutline>
+                    <ButtonOutline>
+                      <a href="/contact">Anfragen</a>
+                    </ButtonOutline>
                   </div>
                 </motion.div>
               </ScrollAnimationWrapper>

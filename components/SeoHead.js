@@ -5,15 +5,14 @@ import { useRouter } from "next/router";
 const defaultMeta = {
   title: "Martin Pöhl",
   siteName: "Martin Pöhl",
-  description:
-    "Lassen Sie sich von mir eine professionelle Webseite erstellen",
+  description: "Lassen Sie sich von mir eine professionelle Webseite erstellen",
   // change base url of your web (without '/' at the end)
-  url: "https://next-landing-vpn.vercel.app",
+  url: "https://martinpoehl.ch",
   type: "website",
   robots: "follow, index",
   // change with url of your image (recommended dimension = 1.91:1)
   // used in twitter, facebook, etc. card when link copied in tweet/status
-  image: "https://next-landing-vpn.vercel.app/assets/card-image.png",
+  image: "https://martinpoehl.ch/assets/card-image.png",
   author: "Martin Pöhl",
 };
 
@@ -50,7 +49,7 @@ const SeoHead = (props) => {
   return (
     <Head>
       <title>{meta.title}</title>
-      
+
       <meta name="robots" content={meta.robots} />
       <meta content={meta.description} name="description" />
       <meta property="og:url" content={`${meta.url}${router.asPath}`} />
