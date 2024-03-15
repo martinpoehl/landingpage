@@ -1,12 +1,12 @@
 {
   "$schema": "https://json.schemastore.org/web-manifest-combined.json",
-  "name": "Martin Pöhl",
-  "short_name": "MP",
+  "name": "martinpoehl",
+  "short_name": "mp",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#FFFFFF",
   "theme_color": "#F53838",
-  "description": "Ich baue eine professionelle Webseite für Sie.",
+  "description": "Brauchen Sie eine moderne Webseite?",
   "icons": [
     {
       "src": "/favicon/android-icon-36x36.png",
