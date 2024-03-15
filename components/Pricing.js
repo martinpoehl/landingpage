@@ -21,7 +21,6 @@ const Pricing = () => {
     {
       name: "Professionell",
       products: [
-        { name: "Beratung" },
         { name: "Webseite erstellen" },
         { name: "Hosting" },
         { name: "Support" },
