@@ -81,6 +81,9 @@ const Pricing = () => {
                       </li>
                     ))}
                   </ul>
+                  <div>
+                    <p>{product.preis}</p>
+                  </div>
                   <div className="flex flex-col w-full justify-center my-4 flex-none">
                     <ButtonOutline>
                       <a href="/contact">Anfragen</a>
