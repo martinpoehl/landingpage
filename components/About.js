@@ -14,24 +14,24 @@ const About = () => {
 
                         </img>
                         <h1 class="text-3xl lg:text-3xl xl:text-3xl font-medium text-black-600 leading-normal text-center">Martin Pöhl</h1>
-                        <p class="text-xl text-gray-700 mt-5 text-center sm:text-sm">Webdeveloper & System Engeener</p>
+                        <p class="text-xl text-gray-700 mt-5 text-center sm:text-sm">System-Engeener & Webdeveloper</p>
                         
                     </div>
                     <hr class="my-6 border-t border-gray-300"/>
                     <div class="grid grid-flow flex flex-col p-4 justify-center ">
                         <span class="text-md lg:text-2xl xl:text-2xl font-medium text-black-600 leading-normal mb-2 text-center">Skills</span>
                         <ul>
-                            <li class="text-sm text-center mb-2">HTML/CSS</li>
-                            <li class="text-sm text-center mb-2">JavaScript</li>
-                            <li class="text-sm text-center mb-2">React</li>
-                            <li class="text-sm text-center mb-2">Node.js</li>
-                            <li class="text-sm text-center mb-2">Tailwind Css</li>
+                            <li class="text-sm text-center mb-2 italic">HTML/CSS</li>
+                            <li class="text-sm text-center mb-2 italic">JavaScript</li>
+                            <li class="text-sm text-center mb-2 italic">React</li>
+                            <li class="text-sm text-center mb-2 italic">Node.js</li>
+                            <li class="text-sm text-center mb-2 italic">Tailwind Css</li>
                         </ul>
                         <ul>
-                            <li class="text-sm text-center mb-2">Python</li>
-                            <li class="text-sm text-center mb-2">Django</li>
-                            <li class="text-sm text-center mb-2">MySQL</li>
-                            <li class="text-sm text-center mb-2">...</li>
+                            <li class="text-sm text-center mb-2 italic">Python</li>
+                            <li class="text-sm text-center mb-2 italic">Django</li>
+                            <li class="text-sm text-center mb-2 italic">MySQL</li>
+                            <li class="text-sm text-center mb-2 italic">...</li>
                         </ul>
                     </div>
                 </div>
@@ -39,8 +39,8 @@ const About = () => {
             <div class="col-span-4 sm:col-span-9">
                 <div class="bg-white-500 shadow rounded-lg p-6">
                     <h1 class="text-3xl lg:text-4xl xl:text-5xl font-medium text-black-600 leading-normal text-center my-6"><span style={{color: "#f43855"}}>Über mich</span></h1>
-                    <p class="text-md text-gray-700">Mein Name ist Martin Pöhl und derzeit bin ich im Raum Zürich tätig, sowohl als Leiter eines ServiceDesks als auch als System Engineer. In meiner gegenwärtigen Position bin ich an diversen IT-Projekten beteiligt und fungiere auch als Ausbilder. Ich bin seit über 10 Jahren in der IT tätig. Meine Leidenschaft für die Programmierung zeigt sich sowohl in meiner Freizeit als auch in meiner beruflichen Tätigkeit, wo ich an der Entwicklung von Web-Applikationen und Websites arbeite. Mit meiner langjährigen Erfahrung und meinem fundierten Wissen in der IT-Branche bringe ich eine grossen Mehrwert und bilde mich stets weiter.
-
+                    <p class="text-md text-gray-700">
+                        Mein Name ist Martin Pöhl und ich arbeite derzeit im Raum Zürich sowohl als Leiter eines ServiceDesks als auch als System Engineer. In meiner aktuellen Rolle bin ich aktiv an verschiedenen IT-Projekten beteiligt und übernehme auch die Funktion eines Ausbilders. Seit über einem Jahrzehnt bin ich in der IT-Branche tätig und meine Leidenschaft für Programmierung zeigt sich sowohl in meiner Freizeit als auch in meiner beruflichen Laufbahn, wo ich kontinuierlich an der Entwicklung von Web-Applikationen und Websites arbeite. Durch meine langjährige Erfahrung und mein solides Fachwissen bringe ich einen beträchtlichen Mehrwert und setze mich kontinuierlich dafür ein, mich weiterzubilden.
                     </p>
                     <br/>
                     
