@@ -7,7 +7,7 @@ import SeoHead from "../components/SeoHead";
 const ContactPage = () => {
   return (
     <div>
-      <SeoHead title="Martin Pöhl - Kontakt" />
+      <SeoHead title="MartinPoehl - Kontakt" />
       <HeaderShort />
       <Contact />
       <FooterShort />

@@ -1,6 +1,6 @@
 {
   "$schema": "https://json.schemastore.org/web-manifest-combined.json",
-  "name": "martinpoehl",
+  "name": "MartinPoehl",
   "short_name": "mp",
   "start_url": "/",
   "display": "standalone",

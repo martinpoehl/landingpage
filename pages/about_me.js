@@ -7,7 +7,7 @@ import About from "../components/About";
 const AboutMePage = () => {
   return (
     <>
-      <SeoHead title="Martin Pöhl - Über mich" />
+      <SeoHead title="MartinPoehl - Über mich" />
       <HeaderShort />
       <About />
       <FooterShort />

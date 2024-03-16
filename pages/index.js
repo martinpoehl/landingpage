@@ -11,7 +11,7 @@ import Projects from "../components/Projects";
 export default function Home() {
   return (
     <>
-      <SeoHead title="MartinPoehl - Erstellen und Hosting von Webseiten & Webapplikationen" />
+      <SeoHead title="MartinPoehl - Brauchen Sie eine moderne Webseite?" />
       <Layout>
         <Hero />
         <Products />
