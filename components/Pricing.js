@@ -12,13 +12,13 @@ const Pricing = () => {
       name: "Einfach",
       products: [{ name: "Webseite erstellen" }],
       src: "/assets/Free.png",
-      preis: "Ab 500.-",
+      preis: "",
     },
     {
       name: "Mittel",
       products: [{ name: "Webseite erstellen" }, { name: "Hosting" }],
       src: "/assets/Standard.png",
-      preis: "Ab 500.- + jährlich ca. 200.-",
+      preis: "",
     },
     {
       name: "Professionell",
@@ -28,7 +28,7 @@ const Pricing = () => {
         { name: "Support" },
       ],
       src: "/assets/Premium.png",
-      preis: "Ab 500.- + jährlich ca. 200.- + ca. 100.- pro Einsatz",
+      preis: "",
     },
   ];
 
@@ -81,9 +81,6 @@ const Pricing = () => {
                       </li>
                     ))}
                   </ul>
-                  <div>
-                    <p>{product.preis}</p>
-                  </div>
                   <div className="flex flex-col w-full justify-center my-4 flex-none">
                     <ButtonOutline>
                       <a href="/contact">Anfragen</a>
