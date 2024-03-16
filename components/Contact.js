@@ -182,9 +182,7 @@ const Contact = () => {
                         className="mr-2"
                       />
                       <label htmlFor="option1">Einfach</label>
-                    </div>
 
-                    <div>
                       <input
                         type="radio"
                         id="option2"
@@ -194,9 +192,7 @@ const Contact = () => {
                         className="mr-2 ml-4"
                       />
                       <label htmlFor="option2">Mittel</label>
-                    </div>
 
-                    <div>
                       <input
                         type="radio"
                         id="option3"
@@ -218,9 +214,6 @@ const Contact = () => {
                         className="mr-2 ml-4"
                       />
                       <label htmlFor="option4">Webshop</label>
-                    </div>
-
-                    <div>
                       <input
                         type="radio"
                         id="option5"
