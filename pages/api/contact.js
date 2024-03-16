@@ -5,7 +5,7 @@ sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
 export default async function handler(req, res) {
   if (req.method === "POST") {
-    const { firstName, lastName, email, phone, message } = req.body;
+    const { firstName, lastName, email, phone, message, option } = req.body;
 
     // Setup email data
     const msg = {
@@ -17,7 +17,8 @@ export default async function handler(req, res) {
         Nachname: ${lastName}
         Email: ${email}
         Telefonnummer: ${phone}
-        Nachricht: 
+        Option: ${option}
+        Nachricht:
         ${message}
       `,
     };

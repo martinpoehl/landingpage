@@ -12,6 +12,7 @@ const Contact = () => {
     email: "",
     phone: "",
     message: "",
+    option: "", // Added option field
   });
   const [submitted, setSubmitted] = useState(false);
 
@@ -145,7 +146,7 @@ const Contact = () => {
                     required
                   />
                 </div>
-                <div className="sm:col-span-2">
+                <div>
                   <label
                     htmlFor="message"
                     className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
@@ -159,9 +160,80 @@ const Contact = () => {
                     value={formData.message}
                     onChange={handleChange}
                     className="px-4 py-2 block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-                    placeholder="Ich hätte gerne eine Beratung für ..."
+                    placeholder="Ich hätte gerne eine Beratung per Email/Telefon/Zoom an einem dieser Daten ..."
                   ></textarea>
                 </div>
+                <div>
+                  <label
+                    htmlFor="option"
+                    className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                  >
+                    Ich benötige:
+                  </label>
+
+                  <div className="flex items-center mb-2 flex-wrap">
+                    <div>
+                      <input
+                        type="radio"
+                        id="option1"
+                        name="option"
+                        value="1"
+                        onChange={handleChange}
+                        className="mr-2"
+                      />
+                      <label htmlFor="option1">Einfach</label>
+                    </div>
+
+                    <div>
+                      <input
+                        type="radio"
+                        id="option2"
+                        name="option"
+                        value="2"
+                        onChange={handleChange}
+                        className="mr-2 ml-4"
+                      />
+                      <label htmlFor="option2">Mittel</label>
+                    </div>
+
+                    <div>
+                      <input
+                        type="radio"
+                        id="option3"
+                        name="option"
+                        value="3"
+                        onChange={handleChange}
+                        className="mr-2 ml-4"
+                      />
+                      <label htmlFor="option3">Pro</label>
+                    </div>
+
+                    <div>
+                      <input
+                        type="radio"
+                        id="option4"
+                        name="option"
+                        value="4"
+                        onChange={handleChange}
+                        className="mr-2 ml-4"
+                      />
+                      <label htmlFor="option4">Webshop</label>
+                    </div>
+
+                    <div>
+                      <input
+                        type="radio"
+                        id="option5"
+                        name="option"
+                        value="5"
+                        onChange={handleChange}
+                        className="mr-2 ml-4"
+                      />
+                      <label htmlFor="option5">Webapplikation</label>
+                    </div>
+                  </div>
+                </div>
+
                 <div className="w-full md:w-1/4">
                   <ButtonPrimary type="submit">Absenden</ButtonPrimary>
                 </div>

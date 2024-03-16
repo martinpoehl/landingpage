@@ -10,25 +10,41 @@ const Pricing = () => {
   const plans = [
     {
       name: "Einfach",
-      products: [{ name: "Webseite erstellen" }],
+      products: [
+        {
+          name: "Professionelle Webseite oder Landingpage für ein kleines Budget",
+        },
+        { name: "Responsive Design geräteübergreifend" },
+        { name: "Nachhaltiger Webseitenaufbau auf WordPress" },
+        { name: "Einpflege von Text und Bildern" },
+      ],
       src: "/assets/Free.png",
-      preis: "",
+      size: "Bis zu 4 Seiten",
+      preis: "ca. CHF 490.-",
     },
     {
       name: "Mittel",
-      products: [{ name: "Webseite erstellen" }, { name: "Hosting" }],
+      products: [
+        { name: "Responsive Design geräteübergreifend" },
+        { name: "Nachhaltiger Webseitenaufbau auf WordPress" },
+        { name: "Einpflege von Text und Bildern" },
+        { name: "Suchmaschinenoptimierung (SEO)" },
+      ],
       src: "/assets/Standard.png",
-      preis: "",
+      size: "Bis zu 8 Seiten",
+      preis: "ca. CHF 990.-",
     },
     {
       name: "Professionell",
       products: [
-        { name: "Webseite erstellen" },
-        { name: "Hosting" },
-        { name: "Support" },
+        { name: "Responsive Design geräteübergreifend" },
+        { name: "Nachhaltiger Webseitenaufbau auf WordPress" },
+        { name: "Einpflege von Text und Bildern" },
+        { name: "Suchmaschinenoptimierung (SEO)" },
       ],
       src: "/assets/Premium.png",
-      preis: "",
+      size: "Bis zu 12 Seiten",
+      preis: "ca. CHF 1490",
     },
   ];
 
@@ -44,7 +60,7 @@ const Pricing = () => {
               variants={scrollAnimation}
               className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-relaxed"
             >
-              Welche <span style={{ color: "#f43855" }}>Anforderungen</span>{" "}
+              Welche <span style={{ color: "#f43855" }}>Anforderungen </span>
               haben Sie?
             </motion.h3>
             <motion.p
@@ -70,10 +86,17 @@ const Pricing = () => {
                 >
                   <p
                     style={{ color: "#f43855" }}
-                    className="text-2xl underline text-black-600 font-medium font-semibold capitalize my-5 sm:my-4"
+                    className="text-3xl text-black-600 font-medium font-semibold capitalize my-5 sm:my-4"
                   >
                     {plan.name}
+                    <p className="text-lg">{plan.size}</p>
                   </p>
+                  <p style={{ color: "#f43855" }} className="text-3xl">
+                    {plan.preis}
+                    <p className="text-xl">einmalig</p>
+                  </p>
+                  <br />
+
                   <ul className="flex flex-col list-inside pl-6 xl:pl-0 items-start justify-start text-left text-black-500 flex-grow mb-2">
                     {plan.products.map((product) => (
                       <li className="relative check custom-list my-1">
