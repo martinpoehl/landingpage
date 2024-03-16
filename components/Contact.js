@@ -12,7 +12,7 @@ const Contact = () => {
     email: "",
     phone: "",
     message: "",
-    option: "", // Added option field
+    option: "Einfach", // Set the default value to "Einfach"
   });
   const [submitted, setSubmitted] = useState(false);
 
@@ -177,7 +177,8 @@ const Contact = () => {
                         type="radio"
                         id="option1"
                         name="option"
-                        value="1"
+                        value="Einfach"
+                        checked={formData.option === "Einfach"} // Check if the option is "Einfach"
                         onChange={handleChange}
                         className="mr-2"
                       />
@@ -187,7 +188,8 @@ const Contact = () => {
                         type="radio"
                         id="option2"
                         name="option"
-                        value="2"
+                        value="Mittel"
+                        checked={formData.option === "Mittel"} // Check if the option is "Mittel"
                         onChange={handleChange}
                         className="mr-2 ml-4"
                       />
@@ -197,11 +199,12 @@ const Contact = () => {
                         type="radio"
                         id="option3"
                         name="option"
-                        value="3"
+                        value="Professionell"
+                        checked={formData.option === "Professionell"} // Check if the option is "Professionell"
                         onChange={handleChange}
                         className="mr-2 ml-4"
                       />
-                      <label htmlFor="option3">Pro</label>
+                      <label htmlFor="option3">Professionell</label>
                     </div>
 
                     <div>
@@ -209,7 +212,8 @@ const Contact = () => {
                         type="radio"
                         id="option4"
                         name="option"
-                        value="4"
+                        value="Webshop"
+                        checked={formData.option === "Webshop"} // Check if the option is "Webshop"
                         onChange={handleChange}
                         className="mr-2 ml-4"
                       />
@@ -218,7 +222,8 @@ const Contact = () => {
                         type="radio"
                         id="option5"
                         name="option"
-                        value="5"
+                        value="Webapplikation"
+                        checked={formData.option === "Webapplikation"} // Check if the option is "Webapplikation"
                         onChange={handleChange}
                         className="mr-2 ml-4"
                       />
