@@ -3,16 +3,16 @@ import { useRouter } from "next/router";
 
 // Default value for some meta data
 const defaultMeta = {
-  title: "Martin Pöhl",
-  siteName: "Martin Pöhl",
-  description: "Lassen Sie sich von mir eine professionelle Webseite erstellen",
+  title: "Martinpoehl",
+  siteName: "Martinpoehl",
+  description: "Brauchen Sie eine moderne Webseite für Ihr Unternehmen?",
+  content: "Dann setzen Sie sich mit mir in Verbindung",
   // change base url of your web (without '/' at the end)
   url: "https://martinpoehl.ch",
   type: "website",
   robots: "follow, index",
   // change with url of your image (recommended dimension = 1.91:1)
   // used in twitter, facebook, etc. card when link copied in tweet/status
-  image: "https://martinpoehl.ch/assets/card-image.png",
   author: "Martin Pöhl",
 };
 
@@ -52,6 +52,7 @@ const SeoHead = (props) => {
 
       <meta name="robots" content={meta.robots} />
       <meta content={meta.description} name="description" />
+      <meta name="DESCRIPTION" content={meta.content} 
       <meta property="og:url" content={`${meta.url}${router.asPath}`} />
       <link rel="canonical" href={`${meta.url}${router.asPath}`} />
       {/* Open Graph */}
