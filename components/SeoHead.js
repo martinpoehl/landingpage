@@ -52,8 +52,9 @@ const SeoHead = (props) => {
 
       <meta name="robots" content={meta.robots} />
       <meta content={meta.description} name="description" />
-      <meta name="DESCRIPTION" content={meta.content} 
+      <meta name="DESCRIPTION" content={meta.content} />
       <meta property="og:url" content={`${meta.url}${router.asPath}`} />
+      <link rel="icon" href="/public/assets/favicon/favicon.ico"></link>
       <link rel="canonical" href={`${meta.url}${router.asPath}`} />
       {/* Open Graph */}
       <meta property="og:type" content={meta.type} />
