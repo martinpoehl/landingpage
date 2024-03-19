@@ -10,14 +10,15 @@ class MyDocument extends Document {
     return (
       <Html lang="de">
         <Head>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-C4R57RK53J"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments)}
-          gtag('js', new Date());
+          {/* Google tag (gtag.js) */}
+          <script async src="https://www.googletagmanager.com/gtag/js?id=G-C4R57RK53J"></script>
+          <script>
+            {`window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
 
-          gtag('config', 'G-C4R57RK53J');
-        </script>
+            gtag('config', 'G-C4R57RK53J');`}
+          </script>
 
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link
