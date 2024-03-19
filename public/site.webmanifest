@@ -1,12 +1,12 @@
 {
   "$schema": "https://json.schemastore.org/web-manifest-combined.json",
-  "name": "MartinPoehl",
+  "name": "Martinpoehl",
   "short_name": "mp",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#FFFFFF",
   "theme_color": "#F53838",
-  "description": "Brauchen Sie eine moderne Webseite?",
+  "description": "Lassen Sie sich eine moderne Webseite erstellen.",
   "icons": [
     {
       "src": "/favicon/android-icon-36x36.png",
