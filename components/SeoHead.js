@@ -48,7 +48,6 @@ const SeoHead = (props) => {
 
   return (
     <Head>
-
       {/* Google tag (gtag.js) */}
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-C4R57RK53J"></script>
       <script>
