@@ -44,7 +44,7 @@ const Testimoni = () => {
                 </h5>
                 <p>Ich werde mich umgehend bei Ihnen melden.</p>
               </div>
-              <a className="w-full sm:w-6/12" href="mailto:martinpoehl@me.com">
+              <a className="w-full sm:w-6/12" href="mailto:info@martinpoehl.ch">
                 <ButtonPrimary className="w-full sm:w-6/12 hover:shadow-orange-md">
                   Email
                 </ButtonPrimary>
