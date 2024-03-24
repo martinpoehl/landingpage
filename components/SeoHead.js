@@ -5,8 +5,9 @@ import { useRouter } from "next/router";
 const defaultMeta = {
   title: "Martinpoehl",
   siteName: "Martinpoehl",
-  description: "Lassen Sie sich eine professionelle Webseite erstellen.",
-  content: "Sie haben die Möglichkeit, mir Ihre Wünsche unkompliziert mitzuteilen. Beratung; Webseite erstellen; Hosting; Support; Weiterentwicklung. Welche Anforderungen haben Sie?",
+  description: "Brauchen Sie eine professionelle Webseite für Ihr Unternehmen?",
+  content:
+    "Sie haben die Möglichkeit, mir Ihre Wünsche unkompliziert mitzuteilen. Beratung; Webseite erstellen; Hosting; Support; Weiterentwicklung. Welche Anforderungen haben Sie?",
   // change base url of your web (without '/' at the end)
   url: "https://martinpoehl.ch",
   type: "website",
@@ -49,6 +50,17 @@ const SeoHead = (props) => {
   return (
     <Head>
       <title>{meta.title}</title>
+
+      {/* Google tag (gtag.js) */}
+      <script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-C4R57RK53J"
+      ></script>
+      <script>
+        window.dataLayer = window.dataLayer || []; function gtag()
+        {dataLayer.push(arguments)}
+        gtag('js', new Date()); gtag('config', 'G-C4R57RK53J');
+      </script>
 
       <meta name="robots" content={meta.robots} />
       <meta content={meta.description} name="description" />
