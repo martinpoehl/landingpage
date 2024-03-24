@@ -57,9 +57,11 @@ const SeoHead = (props) => {
         src="https://www.googletagmanager.com/gtag/js?id=G-C4R57RK53J"
       ></script>
       <script>
-        window.dataLayer = window.dataLayer || []; function gtag()
-        {dataLayer.push(arguments)}
-        gtag('js', new Date()); gtag('config', 'G-C4R57RK53J');
+        {`window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-C4R57RK53J');`}
       </script>
 
       <meta name="robots" content={meta.robots} />
