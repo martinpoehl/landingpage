@@ -3,8 +3,8 @@ import { useRouter } from "next/router";
 
 // Default value for some meta data
 const defaultMeta = {
-  title: "Martinpoehl",
-  siteName: "Martinpoehl",
+  title: "Martin Pöhl",
+  siteName: "Martin Pöhl",
   description: "Brauchen Sie eine professionelle Webseite für Ihr Unternehmen?",
   content:
     "Sie haben die Möglichkeit, mir Ihre Wünsche unkompliziert mitzuteilen. Beratung; Webseite erstellen; Hosting; Support; Weiterentwicklung. Welche Anforderungen haben Sie?",
